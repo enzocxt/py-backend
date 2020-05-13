@@ -1,42 +1,189 @@
 import socket
+import ssl
 
-# 创建一个 socket 对象
-# 参数 socket.AF_INET 表示是 ipv4 协议
-# 参数 socket.SOCK_STREAM 表示是 tcp 协议
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-# 这两个其实是默认值, 所以你可以不写, 如下
-# s = socket.socket()
+def parsed_url(url):
+    """
+    解析 url 返回 (protocol host port path)
+    有的时候有的函数, 它本身就美不起来, 你要做的就是老老实实写
+    """
+    # 检查协议
+    protocol = 'http'
+    if url[:7] == 'http://':
+        u = url.split('://')[1]
+    elif url[:8] == 'https://':
+        protocol = 'https'
+        u = url.split('://')[1]
+    else:
+        # '://' 定位 然后取第一个 / 的位置来切片
+        u = url
 
-# https 协议
-# s = ssl.wrap_socket(socket.socket())
+    # 检查默认 path
+    i = u.find('/')
+    if i == -1:
+        host = u
+        path = '/'
+    else:
+        host = u[:i]
+        path = u[i:]
 
-# 主机(域名或者ip)和端口
-host = 'g.cn'
-port = 80
-# 用 connect 函数连接上主机, 参数是一个 tuple
-s.connect((host, port))
+    # 检查端口
+    port_dict = {
+        'http': 80,
+        'https': 443,
+    }
+    # 默认端口
+    port = port_dict[protocol]
+    if host.find(':') != -1:
+        h = host.split(':')
+        host = h[0]
+        port = int(h[1])
 
-# 连接上后, 可以通过这个函数得到本机的 ip 和端口
-ip, port = s.getsockname()
-print('本机 ip 和 port {} {}'.format(ip, port))
+    return protocol, host, port, path
 
-# 构造一个 HTTP 请求
-http_request = 'GET / HTTP/1.1\r\nhost:{}\r\n\r\n'.format(host)
-# 发送 HTTP 请求给服务器
-# send 函数只接受 bytes 作为参数
-# str.encode 把 str 转换为 bytes, 编码是 utf-8
-request = http_request.encode('utf-8')
-print('请求', request)
-s.send(request)
 
-# 接受服务器的响应数据
-# 参数是长度, 这里为 1023 字节
-# 所以这里如果服务器返回的数据中超过 1023 的部分你就得不到了
-response = s.recv(1023)
+def socket_by_protocol(protocol):
+    """
+    根据协议返回一个 socket 实例
+    """
+    if protocol == 'http':
+        s = socket.socket()
+    else:
+        # HTTPS 协议需要使用 ssl.wrap_socket 包装一下原始的 socket
+        # 除此之外无其他差别
+        s = ssl.wrap_socket(socket.socket())
+    return s
 
-# 输出响应的数据, bytes 类型
-print('响应')
-print(response)
-# 转成 str 再输出
-print('响应的 str 格式')
-print(response.decode('utf-8'))
+
+def response_by_socket(s):
+    """
+    参数是一个 socket 实例
+    返回这个 socket 读取的所有数据
+    """
+    response = b''
+    buffer_size = 1024
+    while True:
+        r = s.recv(buffer_size)
+        if len(r) == 0:
+            break
+        response += r
+    return response
+
+
+def parsed_response(r):
+    """
+    把 response 解析出 状态码 headers body 返回
+    状态码是 int
+    headers 是 dict
+    body 是 str
+    """
+    header, body = r.split('\r\n\r\n', 1)
+    h = header.split('\r\n')
+    status_code = h[0].split()[1]
+    status_code = int(status_code)
+
+    headers = {}
+    for line in h[1:]:
+        k, v = line.split(': ')
+        headers[k] = v
+    return status_code, headers, body
+
+
+# 复杂的逻辑全部封装成函数
+def get(url):
+    """
+    用 GET 请求 url 并返回响应
+    """
+    protocol, host, port, path = parsed_url(url)
+
+    s = socket_by_protocol(protocol)
+    s.connect((host, port))
+
+    request = 'GET {} HTTP/1.1\r\nhost: {}\r\nConnection: close\r\n\r\n'.format(path, host)
+    encoding = 'utf-8'
+    s.send(request.encode(encoding))
+
+    response = response_by_socket(s)
+    r = response.decode(encoding)
+
+    status_code, headers, body = parsed_response(r)
+    if status_code == 301:
+        url = headers['Location']
+        return get(url)
+
+    return status_code, headers, body
+
+
+def main():
+    url = 'http://movie.douban.com/top250'
+    status_code, headers, body = get(url)
+    print(status_code, headers, body)
+
+
+# 以下 test 开头的函数是单元测试
+def test_parsed_url():
+    """
+    parsed_url 函数很容易出错, 所以我们写测试函数来运行看检测是否正确运行
+    """
+    http = 'http'
+    https = 'https'
+    host = 'g.cn'
+    path = '/'
+    test_items = [
+        ('http://g.cn', (http, host, 80, path)),
+        ('http://g.cn/', (http, host, 80, path)),
+        ('http://g.cn:90', (http, host, 90, path)),
+        ('http://g.cn:90/', (http, host, 90, path)),
+        #
+        ('https://g.cn', (https, host, 443, path)),
+        ('https://g.cn:233/', (https, host, 233, path)),
+    ]
+    for t in test_items:
+        url, expected = t
+        u = parsed_url(url)
+        # assert 是一个语句, 名字叫 断言
+        # 如果断言成功, 条件成立, 则通过测试, 否则为测试失败, 中断程序报错
+        e = "parsed_url ERROR, ({}) ({}) ({})".format(url, u, expected)
+        assert u == expected, e
+
+
+def test_parsed_response():
+    """
+    测试是否能正确解析响应
+    """
+    # NOTE, 行末的 \ 表示连接多行字符串
+    response = 'HTTP/1.1 301 Moved Permanently\r\n' \
+        'Content-Type: text/html\r\n' \
+        'Location: https://movie.douban.com/top250\r\n' \
+        'Content-Length: 178\r\n\r\n' \
+        'test body'
+    status_code, header, body = parsed_response(response)
+    assert status_code == 301
+    assert len(list(header.keys())) == 3
+    assert body == 'test body'
+
+
+def test_get():
+    """
+    测试是否能正确处理 HTTP 和 HTTPS
+    """
+    urls = [
+        'http://movie.douban.com/top250',
+        'https://movie.douban.com/top250',
+    ]
+    # 这里就直接调用了 get 如果出错就会挂, 测试得比较简单
+    for u in urls:
+        get(u)
+
+
+def test():
+    """
+    用于测试的主函数
+    """
+    test_parsed_url()
+    test_get()
+    test_parsed_response()
+
+
+if __name__ == '__main__':
+    test()
+    main()
