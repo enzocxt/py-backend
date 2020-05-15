@@ -43,20 +43,41 @@ def route_index(request):
     """
     header = 'HTTP/1.1 200 VERY OK\r\nContent-Type: text/html\r\n'
     body = template('index.html')
+    username = current_user(request)
+    body = body.replace('{{username}}', username)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
 
-def response_with_headers(headers):
+def response_with_headers(headers, code=200):
     """
     Content-Type: text/html
     Set-Cookie: user=gua
     """
-    header = 'HTTP/1.1 200 VERY OK\r\n'
+    header = 'HTTP/1.1 {} VERY OK\r\n'.format(code)
     header += ''.join(['{}: {}\r\n'.format(k, v)
                        for k, v in headers.items()])
     return header
 
+
+def redirect(url):
+    """
+    浏览器在收到 302 响应的时候
+    会自动在 HTTP header 里面找 Location 字段并获取一个 url
+    然后自动请求新的 url
+    """
+    headers = {
+        'Location': url,
+    }
+    # 增加 Location 字段并生成 HTTP 响应返回
+    # 注意, 没有 HTTP body 部分
+    r = response_with_headers(headers, 302) + '\r\n'
+    return r.encode('utf-8')
+"""
+HTTP/1.1 302 xxx
+Location: /
+...
+"""
 
 def route_login(request):
     """
@@ -73,9 +94,12 @@ def route_login(request):
         form = request.form()
         u = User.new(form)
         if u.validate_login():
+            # 设置一个随机字符串来当令牌使用
             session_id = random_str()
             session[session_id] = u.username
             headers['Set-Cookie'] = f'user={session_id}'
+            # 下面是把用户名存入 cookie 中
+            # headers['Set-Cookie'] = 'user={}'.format(u.username)
             result = '登录成功'
         else:
             result = '用户名或者密码错误'
@@ -115,6 +139,11 @@ def route_message(request):
     """
     消息页面的路由函数
     """
+    username = current_user(request)
+    # 如果是未登录的用户, 重定向到 '/'
+    if username == '【游客】':
+        log("**debug, route msg 未登录")
+        return redirect('/')
     log('本次请求的 method', request.method)
     if request.method == 'POST':
         form = request.form()
@@ -143,6 +172,9 @@ def route_static(request):
         return img
 
 
+# 路由字典
+# key 是路由(路由就是 path)
+# value 是路由处理函数(就是响应)
 route_dict = {
     '/': route_index,
     '/login': route_login,

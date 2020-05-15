@@ -5,6 +5,7 @@ from utils import log
 
 from routes import route_static
 from routes import route_dict
+from routes_todo import route_dict as todo_route
 
 
 # 定义一个 class 用于保存请求的数据
@@ -90,14 +91,14 @@ def parsed_path(path):
 
 
 def response_for_path(path):
-    path, query = parsed_path(path)
-    request.path = path
-    request.query = query
-    log('path and query', path, query)
     """
     根据 path 调用相应的处理函数
     没有处理的 path 会返回 404
     """
+    path, query = parsed_path(path)
+    request.path = path
+    request.query = query
+    log('path and query', path, query)
     r = {
         '/static': route_static,
         # '/': route_index,
@@ -105,6 +106,7 @@ def response_for_path(path):
         # '/messages': route_message,
     }
     r.update(route_dict)
+    r.update(todo_route)
     response = r.get(path, error)
     return response(request)
 

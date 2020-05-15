@@ -81,6 +81,24 @@ class Model(object):
                 return m
         return None
 
+    @classmethod
+    def find_all(cls, **kwargs):
+        """
+        用法如下，kwargs 是只有一个元素的 dict
+        u = User.find_by(username='gua')
+        """
+        log('kwargs, ', kwargs)
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        data = []
+        for m in all:
+            # getattr(m, k) 等价于 m.__dict__[k]
+            if v == m.__dict__[k]:
+                data.append(m)
+        return data
+
     def save(self):
         """
         用 all 方法读取文件中的所有 model 并生成一个 list
@@ -88,8 +106,49 @@ class Model(object):
         """
         models = self.all()
         log('models', models)
-        models.append(self)
+        first_index = 0
+        if self.__dict__.get('id') is None:
+            # 加上 id
+            if len(models) > 0:
+                # 不是第一个数据
+                self.id = models[-1].id + 1
+            else:
+                # 是第一个数据
+                log('first index', first_index)
+                self.id = first_index
+            models.append(self)
+        else:
+            # 有 id 说明已经是存在于数据文件中的数据
+            # 那么就找到这条数据并替换之
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
+            # 看看是否找到下标
+            # 如果找到，就替换掉这条数据
+            if index > -1:
+                models[index] = self
         # __dict__ 是包含了对象所有属性和值的字典
+        l = [m.__dict__ for m in models]
+        path = self.db_path()
+        save(l, path)
+
+    def remove(self):
+        models = self.all()
+        if self.__dict__.get('id') is not None:
+            # 有 id 说明已经是存在于数据文件中的数据
+            # 那么就找到这条数据并替换之
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
+            # 看看是否找到下标
+            # 如果找到，就替换掉这条数据
+            if index > -1:
+                del models[index]
+        # 保存
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)
