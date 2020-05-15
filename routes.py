@@ -90,6 +90,7 @@ def route_login(request):
     # log('login, headers', request.headers)
     log('login, cookies', request.cookies)
     username = current_user(request)
+    log('先前用户', username)
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
@@ -97,6 +98,7 @@ def route_login(request):
             # 设置一个随机字符串来当令牌使用
             session_id = random_str()
             session[session_id] = u.username
+            log('当前用户', u.username)
             headers['Set-Cookie'] = f'user={session_id}'
             # 下面是把用户名存入 cookie 中
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
@@ -110,7 +112,7 @@ def route_login(request):
     body = body.replace('{{username}}', username)
     header = response_with_headers(headers)
     r = header + '\r\n' + body
-    # log('login', r)
+    # log('login 的响应', r)
     return r.encode(encoding='utf-8')
 
 

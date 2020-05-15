@@ -35,18 +35,20 @@ class Request(object):
         Accept-Language: zh-CN,zh;q=0.8
         Coolie: height=169; user=gua
         """
+        # 清空 headers
+        self.headers = {}
         # lines = header.split('\r\n')
         lines = header
         for line in lines:
             k, v = line.split(': ', 1)
             self.headers[k] = v
+        # 清除 cookies
         self.add_cookies()
 
     def form(self):
         body = urllib.parse.unquote(self.body)
         args = body.split('&')
         f = {}
-        log('args:', args)
         for arg in args:
             if '=' in arg:
                 k, v = arg.split('=', 1)
@@ -142,7 +144,7 @@ def run(host='', port=3000):
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
             # 把响应发送给客户端
-            log('response:', response)
+            log('response:', response.decode(encoding='utf-8'))
             connection.sendall(response)
             # 处理完请求, 关闭连接
             connection.close()
