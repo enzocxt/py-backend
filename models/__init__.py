@@ -14,7 +14,7 @@ def save(data, path):
     # ensure_ascii=False 用于保存中文
     s = json.dumps(data, indent=2, ensure_ascii=False)
     with open(path, 'w+', encoding='utf-8') as f:
-        log('save', path, s, data)
+        # log('save', path, s, data)
         f.write(s)
 
 
@@ -25,18 +25,27 @@ def load(path):
     """
     with open(path, 'r', encoding='utf-8') as f:
         s = f.read()
-        log('load', s)
+        # log('load', s)
         return json.loads(s)
 
 
 # Model 是用于存储数据的基类
 class Model(object):
+    """
+    Model 是所有 model 的基类
     # @classmethod 说明这是一个 类方法
     # 类方法的调用方式是  类名.类方法()
+    例如
+    user = User()
+    user.db_path() 返回 User.txt
+    """
     @classmethod
     def db_path(cls):
-        # classmethod 有一个参数是 class
-        # 所以我们可以得到 class 的名字
+        """
+        cls 是类名, 谁调用的类名就是谁的
+        classmethod 有一个参数是 class(这里我们用 cls 这个名字)
+        所以我们可以得到 class 的名字
+        """
         classname = cls.__name__
         path = 'db/{}.txt'.format(classname)
         return path
@@ -44,16 +53,38 @@ class Model(object):
     @classmethod
     def all(cls):
         """
-        得到一个类的所有存储的实例
+        all 方法(类里面的函数叫方法)使用 load 函数得到所有的 models
         """
         path = cls.db_path()
         models = load(path)
         ms = [cls.new(m) for m in models]
         return ms
 
+    @classmethod
+    def new(cls, form):
+        m = cls(form)
+        return m
+
+    @classmethod
+    def find_by(cls, **kwargs):
+        """
+        用法如下，kwargs 是只有一个元素的 dict
+        u = User.find_by(username='gua)
+        """
+        # log('kwargs, ', kwargs)
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                return m
+        return None
+
     def save(self):
         """
-        save 函数用于把一个 Model 的实例保存到文件中
+        用 all 方法读取文件中的所有 model 并生成一个 list
+        把 self 添加进去并且保存进文件
         """
         models = self.all()
         log('models', models)
@@ -77,3 +108,22 @@ class Model(object):
 # 以下两个类用于实际的数据处理
 # 因为继承了 Model
 # 所以可以直接 save load
+
+def test():
+    # users = User.all()
+    # u = User.find_by(username='gua')
+    # log('users', u)
+    form = dict(
+        username='gua',
+        password='gua',
+    )
+    u = User(form)
+    u.save()
+    u.save()
+    u.save()
+    u.save()
+    u.save()
+    u.save()
+
+if __name__ == '__main__':
+    test()

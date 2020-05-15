@@ -2,12 +2,34 @@ from utils import log
 from models.message import Message
 from models.user import User
 import os
+import random
 
-
+# 保存所有的 messages
 message_list = []
+session = {}
 
+
+def random_str():
+    """
+    生成一个随机字符串
+    """
+    seed = "qwertyuiopasdfghjklzxcvbnm1234567890"
+    s = ''
+    for i in range(16):
+        random_index = random.randint(0, len(seed) - 2)
+        s += seed[random_index]
+    return s
+
+
+def current_user(request):
+    session_id = request.cookies.get('user', '')
+    username = session.get(session_id, '【游客】')
+    return username
 
 def template(name):
+    """
+    根据名字读取 templates 文件夹里的一个文件并返回
+    """
     # cwd = os.getcwd()
     # log('当前目录', cwd)
     path = 'templates/' + name
@@ -19,18 +41,41 @@ def route_index(request):
     """
     主页的处理函数, 返回主页的响应
     """
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    header = 'HTTP/1.1 200 VERY OK\r\nContent-Type: text/html\r\n'
     body = template('index.html')
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
 
+def response_with_headers(headers):
+    """
+    Content-Type: text/html
+    Set-Cookie: user=gua
+    """
+    header = 'HTTP/1.1 200 VERY OK\r\n'
+    header += ''.join(['{}: {}\r\n'.format(k, v)
+                       for k, v in headers.items()])
+    return header
+
+
 def route_login(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    """
+    登录页面的路由函数
+    """
+    headers = {
+        'Content-Type': 'text/html',
+        # 'Set-Cookie': 'height=169; gua=1; pwd=2; Path=/',
+    }
+    # log('login, headers', request.headers)
+    log('login, cookies', request.cookies)
+    username = current_user(request)
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
         if u.validate_login():
+            session_id = random_str()
+            session[session_id] = u.username
+            headers['Set-Cookie'] = f'user={session_id}'
             result = '登录成功'
         else:
             result = '用户名或者密码错误'
@@ -38,12 +83,18 @@ def route_login(request):
         result = ''
     body = template('login.html')
     body = body.replace('{{result}}', result)
+    body = body.replace('{{username}}', username)
+    header = response_with_headers(headers)
     r = header + '\r\n' + body
+    # log('login', r)
     return r.encode(encoding='utf-8')
 
 
 def route_register(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    """
+    注册页面的路由函数
+    """
+    header = 'HTTP/1.1 200 VERY OK\r\nContent-Type: text/html\r\n'
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
@@ -62,7 +113,7 @@ def route_register(request):
 
 def route_message(request):
     """
-    主页的处理函数, 返回主页的响应
+    消息页面的路由函数
     """
     log('本次请求的 method', request.method)
     if request.method == 'POST':
