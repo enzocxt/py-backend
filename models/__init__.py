@@ -57,7 +57,7 @@ class Model(object):
         """
         path = cls.db_path()
         models = load(path)
-        ms = [cls.new(m) for m in models]
+        ms = [cls(m) for m in models]
         return ms
 
     @classmethod
@@ -99,23 +99,46 @@ class Model(object):
                 data.append(m)
         return data
 
+    @classmethod
+    def find(cls, id):
+        return cls.find_by(id=id)
+
+    @classmethod
+    def delete(cls, id):
+        models = cls.all()
+        index = -1
+        for i, e in enumerate(models):
+            if e.id == id:
+                index = i
+                break
+        # 判断是否找到了这个 id 的数据
+        if index == -1:
+            # 没找到
+            pass
+        else:
+            models.pop(index)
+            l = [m.__dict__ for m in models]
+            path = cls.db_path()
+            save(l, path)
+
     def save(self):
         """
         用 all 方法读取文件中的所有 model 并生成一个 list
         把 self 添加进去并且保存进文件
         """
         models = self.all()
-        log('models', models)
-        first_index = 0
+        # log('models', models)
+        # 如果没有 id，说明是新添加的元素
         if self.__dict__.get('id') is None:
-            # 加上 id
-            if len(models) > 0:
-                # 不是第一个数据
-                self.id = models[-1].id + 1
+            # 设置 self.id
+            # 先看看是否是空 list
+            if len(models) == 0:
+                # 我们让第一个元素的 id 为 1（当然也可以为 0）
+                self.id = 1
             else:
-                # 是第一个数据
-                log('first index', first_index)
-                self.id = first_index
+                m = models[-1]
+                # log('m', m)
+                self.id = m.id + 1
             models.append(self)
         else:
             # 有 id 说明已经是存在于数据文件中的数据
@@ -127,28 +150,9 @@ class Model(object):
                     break
             # 看看是否找到下标
             # 如果找到，就替换掉这条数据
-            if index > -1:
-                models[index] = self
+            log('debug', index)
+            models[index] = self
         # __dict__ 是包含了对象所有属性和值的字典
-        l = [m.__dict__ for m in models]
-        path = self.db_path()
-        save(l, path)
-
-    def remove(self):
-        models = self.all()
-        if self.__dict__.get('id') is not None:
-            # 有 id 说明已经是存在于数据文件中的数据
-            # 那么就找到这条数据并替换之
-            index = -1
-            for i, m in enumerate(models):
-                if m.id == self.id:
-                    index = i
-                    break
-            # 看看是否找到下标
-            # 如果找到，就替换掉这条数据
-            if index > -1:
-                del models[index]
-        # 保存
         l = [m.__dict__ for m in models]
         path = self.db_path()
         save(l, path)

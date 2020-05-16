@@ -1,4 +1,5 @@
 from . import Model
+from .todo import Todo
 
 
 class User(Model):
@@ -15,3 +16,10 @@ class User(Model):
 
     def validate_register(self):
         return len(self.username) > 2 and len(self.password) > 2
+
+    def todos(self):
+        ts = []
+        for t in Todo.all():
+            if t.user_id == self.id:
+                ts.append(t)
+        return ts

@@ -1,5 +1,5 @@
 from utils import log
-from models.message import Message
+# from models.message import Message
 from models.user import User
 import os
 import random
@@ -25,6 +25,7 @@ def current_user(request):
     session_id = request.cookies.get('user', '')
     username = session.get(session_id, '【游客】')
     return username
+
 
 def template(name):
     """
@@ -59,25 +60,6 @@ def response_with_headers(headers, code=200):
                        for k, v in headers.items()])
     return header
 
-
-def redirect(url):
-    """
-    浏览器在收到 302 响应的时候
-    会自动在 HTTP header 里面找 Location 字段并获取一个 url
-    然后自动请求新的 url
-    """
-    headers = {
-        'Location': url,
-    }
-    # 增加 Location 字段并生成 HTTP 响应返回
-    # 注意, 没有 HTTP body 部分
-    r = response_with_headers(headers, 302) + '\r\n'
-    return r.encode('utf-8')
-"""
-HTTP/1.1 302 xxx
-Location: /
-...
-"""
 
 def route_login(request):
     """
@@ -137,27 +119,41 @@ def route_register(request):
     return r.encode(encoding='utf-8')
 
 
-def route_message(request):
-    """
-    消息页面的路由函数
-    """
-    username = current_user(request)
-    # 如果是未登录的用户, 重定向到 '/'
-    if username == '【游客】':
-        log("**debug, route msg 未登录")
-        return redirect('/')
-    log('本次请求的 method', request.method)
-    if request.method == 'POST':
-        form = request.form()
-        msg = Message.new(form)
-        log('post', form)
-        message_list.append(msg)
-        # 应该在这里保存 message_list
+# def route_message(request):
+#     """
+#     消息页面的路由函数
+#     """
+#     username = current_user(request)
+#     # 如果是未登录的用户, 重定向到 '/'
+#     if username == '【游客】':
+#         log("**debug, route msg 未登录")
+#         return redirect('/')
+#     log('本次请求的 method', request.method)
+#     if request.method == 'POST':
+#         form = request.form()
+#         msg = Message.new(form)
+#         log('post', form)
+#         message_list.append(msg)
+#         # 应该在这里保存 message_list
+#     header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
+#     # body = '<h1>消息版</h1>'
+#     body = template('html_basic.html')
+#     msgs = '<br>'.join([str(m) for m in message_list])
+#     body = body.replace('{{messages}}', msgs)
+#     r = header + '\r\n' + body
+#     return r.encode(encoding='utf-8')
+
+
+def route_profile(request):
+    log('profile cookies', request.cookies)
     header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
-    # body = '<h1>消息版</h1>'
-    body = template('html_basic.html')
-    msgs = '<br>'.join([str(m) for m in message_list])
-    body = body.replace('{{messages}}', msgs)
+    body = template('profile.html')
+    session_id = request.cookies.get('user', '')
+    user_id = session.get(session_id, -1)
+    user = ''
+    if user_id != -1:
+        user = User.find_by(id=int(user_id))
+    body = body.replace('{{user}}', str(user))
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 
@@ -181,5 +177,6 @@ route_dict = {
     '/': route_index,
     '/login': route_login,
     '/register': route_register,
-    '/messages': route_message,
+    # '/messages': route_message,
+    '/profile': route_profile,
 }

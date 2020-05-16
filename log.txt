@@ -1,0 +1,511 @@
+2020/05/16 14:06:34 start at :3000
+2020/05/16 14:07:44 ip and request, ('127.0.0.1', 9752)
+<__main__.Request object at 0x00000193DAECEB48>
+2020/05/16 14:07:44 cookie ['']
+2020/05/16 14:07:44 path and query / {}
+2020/05/16 14:11:12 start at :3000
+2020/05/16 14:11:15 ip and request, ('127.0.0.1', 9805)
+<__main__.Request object at 0x000002802889ED08>
+2020/05/16 14:11:15 cookie ['']
+2020/05/16 14:11:15 path and query / {}
+2020/05/16 14:16:14 start at :3000
+2020/05/16 14:16:22 ip and request, ('127.0.0.1', 9867)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:16:22 cookie ['']
+2020/05/16 14:16:22 path and query / {}
+2020/05/16 14:16:22 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      0 : 
+      <a href="/delete?id=0">删除</a>
+    </div>
+  
+    <div>
+      1 : 
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 14:16:40 ip and request, ('127.0.0.1', 9872)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:16:40 cookie ['']
+2020/05/16 14:16:40 path and query /add {}
+2020/05/16 14:16:40 response: HTTP/1.1 302 VERY OK
+Location: /
+
+
+2020/05/16 14:16:40 ip and request, ('127.0.0.1', 9873)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:16:40 cookie ['']
+2020/05/16 14:16:40 path and query / {}
+2020/05/16 14:16:40 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      0 : 
+      <a href="/delete?id=0">删除</a>
+    </div>
+  
+    <div>
+      1 : 
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+    <div>
+      3 : 吃饭
+      <a href="/delete?id=3">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 14:17:20 ip and request, ('127.0.0.1', 9875)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:17:20 cookie ['']
+2020/05/16 14:17:20 path and query / {}
+2020/05/16 14:17:20 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 14:17:26 ip and request, ('127.0.0.1', 9876)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:17:26 cookie ['']
+2020/05/16 14:17:26 path and query /add {}
+2020/05/16 14:17:26 response: HTTP/1.1 302 VERY OK
+Location: /
+
+
+2020/05/16 14:17:26 ip and request, ('127.0.0.1', 9877)
+<__main__.Request object at 0x000002231EEBED08>
+2020/05/16 14:17:26 cookie ['']
+2020/05/16 14:17:26 path and query / {}
+2020/05/16 14:17:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:01:31 start at :3000
+2020/05/16 15:01:39 ip and request, ('127.0.0.1', 10374)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:01:39 cookie ['']
+2020/05/16 15:01:39 path and query / {}
+2020/05/16 15:01:39 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:01:42 ip and request, ('127.0.0.1', 10375)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:01:42 cookie ['']
+2020/05/16 15:01:42 path and query / {}
+2020/05/16 15:01:42 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:01:47 ip and request, ('127.0.0.1', 10380)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:01:47 cookie ['']
+2020/05/16 15:01:47 path and query / {}
+2020/05/16 15:01:47 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:02:47 ip and request, ('127.0.0.1', 10393)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:02:47 cookie ['']
+2020/05/16 15:02:47 path and query / {}
+2020/05/16 15:02:47 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:02:48 ip and request, ('127.0.0.1', 10395)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:02:48 cookie ['']
+2020/05/16 15:02:48 path and query /edit {'id': '1'}
+2020/05/16 15:02:48 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO edit</title>
+</head>
+<body>
+  <form action="/update?id=1" method="post">
+    <input name="task" value="吃饭">
+    <button>update todo</button>
+  </form>
+</body>
+</html>
+2020/05/16 15:02:54 ip and request, ('127.0.0.1', 10394)
+<__main__.Request object at 0x000001D3660DED08>
+2020/05/16 15:02:54 cookie ['']
+2020/05/16 15:02:54 path and query /update {'id': '1'}
+2020/05/16 15:05:16 start at :3000
+2020/05/16 15:05:20 ip and request, ('127.0.0.1', 10441)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:05:20 cookie ['']
+2020/05/16 15:05:20 path and query / {}
+2020/05/16 15:05:20 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:05:22 ip and request, ('127.0.0.1', 10442)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:05:22 cookie ['']
+2020/05/16 15:05:22 path and query /edit {'id': '1'}
+2020/05/16 15:05:22 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO edit</title>
+</head>
+<body>
+  <form action="/update?id=1" method="post">
+    <input name="task" value="吃饭">
+    <button>update todo</button>
+  </form>
+</body>
+</html>
+2020/05/16 15:05:26 ip and request, ('127.0.0.1', 10445)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:05:26 cookie ['']
+2020/05/16 15:05:26 path and query /update {'id': '1'}
+2020/05/16 15:05:26 debug 0
+2020/05/16 15:05:26 response: HTTP/1.1 302 VERY OK
+Location: /
+
+
+2020/05/16 15:05:26 ip and request, ('127.0.0.1', 10446)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:05:26 cookie ['']
+2020/05/16 15:05:26 path and query / {}
+2020/05/16 15:05:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:58:58 ip and request, ('127.0.0.1', 11016)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:58:58 cookie ['']
+2020/05/16 15:58:58 path and query / {}
+2020/05/16 15:58:58 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/16 15:59:02 ip and request, ('127.0.0.1', 11024)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:59:02 cookie ['']
+2020/05/16 15:59:02 path and query /login {}
+2020/05/16 15:59:02 login, cookies {}
+2020/05/16 15:59:02 response: HTTP/1.1 200 VERY OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/16 15:59:08 ip and request, ('127.0.0.1', 11026)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:59:08 cookie ['']
+2020/05/16 15:59:08 path and query /login {}
+2020/05/16 15:59:08 login, cookies {}
+2020/05/16 15:59:08 headers response {'Content-Type': 'text/html', 'Set-Cookie': 'user=xagw8ve9qgcd2d1n'}
+2020/05/16 15:59:08 response: HTTP/1.1 302 VERY OK
+Location: /
+
+
+2020/05/16 15:59:08 ip and request, ('127.0.0.1', 11027)
+<__main__.Request object at 0x00000145665AED08>
+2020/05/16 15:59:08 cookie ['']
+2020/05/16 15:59:08 path and query / {}
+2020/05/16 15:59:08 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
