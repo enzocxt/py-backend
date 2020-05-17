@@ -1,6 +1,11 @@
-from utils import log, template, redirect, http_response
-from models.user import User
+
+from utils import log
+from utils import template
+from utils import redirect
+from utils import http_response
 from models.todo import Todo
+from . import redirect
+from . import response_with_headers
 
 
 def index(request):
@@ -36,12 +41,9 @@ def edit(request):
 
 
 def update(request):
-    """
-    通过下面这样的链接来删除一个 todo
-    /delete?id=1
-    """
-    todo_id = int(request.query.get('id'))
     form = request.form()
+    # todo_id = int(request.query.get('id'))
+    todo_id = int(form.get('id'))
     Todo.update(todo_id, form)
     return redirect('/')
 

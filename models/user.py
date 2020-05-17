@@ -1,3 +1,5 @@
+import hashlib
+
 from . import Model
 from .todo import Todo
 
@@ -10,12 +12,33 @@ class User(Model):
         self.username = form.get('username', '')
         self.password = form.get('password', '')
 
+    @staticmethod
+    def salted_password(password, salt='~!@#$%^&*()_+[]{}\|<>?'):
+        """~!@#$%^&*()_+[]{}\|<>?"""
+        def sha256(ascii_str):
+            return hashlib.sha256(ascii_str.encode('ascii')).hexdigest()
+        hash1 = sha256(password)
+        hash2 = sha256(hash1 + salt)
+        return hash2
+
+    def hashed_password(self, pwd):
+        # 用 ascii 编码转换成 bytes 对象
+        p = pwd.encode('ascii')
+        s = hashlib.sha256(p)
+        return s.hexdigest()
+
     def validate_login(self):
         u = User.find_by(username=self.username)
-        return u is not None and u.password == self.password
+        return u is not None and u.password == self.salted_password(self.password)
 
     def validate_register(self):
-        return len(self.username) > 2 and len(self.password) > 2
+        pwd = self.password
+        self.password = self.salted_password(pwd)
+        if User.find_by(username=self.username) is None:
+            self.save()
+            return self
+        else:
+            return None
 
     def todos(self):
         ts = []

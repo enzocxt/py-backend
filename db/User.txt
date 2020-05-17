@@ -1,17 +1,12 @@
 [
   {
-    "username": "gua",
-    "password": "123",
-    "id": 1
-  },
-  {
-    "username": "gua1",
-    "password": "123",
-    "id": 2
-  },
-  {
+    "id": 1,
     "username": "tao",
-    "password": "123",
-    "id": 3
+    "password": "b48609383922f662f995ee41f1ad185a6ab23ae4dca5d22d2eb16ef543a79a7c"
+  },
+  {
+    "id": 2,
+    "username": "gua",
+    "password": "b48609383922f662f995ee41f1ad185a6ab23ae4dca5d22d2eb16ef543a79a7c"
   }
 ]

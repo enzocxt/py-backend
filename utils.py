@@ -1,5 +1,6 @@
 import time
 import os.path
+import random
 from jinja2 import Environment, FileSystemLoader
 
 
@@ -11,6 +12,29 @@ def log(*args, **kwargs):
     dt = time.strftime(format_, value)
     with open('log.txt', 'a', encoding='utf-8') as fout:
         print(dt, *args, file=fout, **kwargs)
+
+
+def random_str():
+    """
+    生成一个随机字符串
+    """
+    seed = "qwertyuiopasdfghjklzxcvbnm1234567890"
+    s = ''
+    for i in range(16):
+        random_index = random.randint(0, len(seed) - 2)
+        s += seed[random_index]
+    return s
+
+
+def error(request, code=404):
+    """
+    根据 code 返回不同的错误响应
+    目前只有 404
+    """
+    e = {
+        404: b'HTTP/1.x 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
+    }
+    return e.get(code, b'')
 
 
 # __file__ 就是本文件的名字
@@ -42,19 +66,21 @@ def response_with_headers(headers, code=200):
     return header
 
 
-def redirect(url):
+def redirect(url, headers=None):
     """
     浏览器在收到 302 响应的时候
     会自动在 HTTP header 里面找 Location 字段并获取一个 url
     然后自动请求新的 url
     """
-    headers = {
-        'Location': url,
-    }
+    if headers is None:
+        headers = {
+            'Content-Type': 'text/html',
+        }
     # 增加 Location 字段并生成 HTTP 响应返回
+    headers['Location'] = url
     # 注意：没有 HTTP body 部分
     r = response_with_headers(headers, 302) + '\r\n'
-    return r.encode('utf-8')
+    return r.encode(encoding='utf-8')
 
 
 def http_response(body, headers=None):

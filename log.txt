@@ -509,3 +509,3420 @@ Content-Type: text/html
   
 </body>
 </html>
+2020/05/17 16:13:42 start at :3000
+2020/05/17 16:13:57 ip and request, ('127.0.0.1', 9521)
+<__main__.Request object at 0x000002C56B12EC08>
+2020/05/17 16:13:57 cookie ['']
+2020/05/17 16:13:57 path and query /weibo {}
+2020/05/17 16:17:12 start at :3000
+2020/05/17 16:17:16 ip and request, ('127.0.0.1', 9560)
+<__main__.Request object at 0x000002BBB726EC08>
+2020/05/17 16:17:16 cookie ['']
+2020/05/17 16:17:16 path and query /login {}
+2020/05/17 16:17:32 start at :3000
+2020/05/17 16:17:34 ip and request, ('127.0.0.1', 9572)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:17:34 cookie ['']
+2020/05/17 16:17:34 path and query /login {}
+2020/05/17 16:17:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:17:41 ip and request, ('127.0.0.1', 9575)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:17:41 cookie ['']
+2020/05/17 16:17:41 path and query /login {}
+2020/05/17 16:17:41 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:17:50 ip and request, ('127.0.0.1', 9577)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:17:50 cookie ['']
+2020/05/17 16:17:50 path and query /register {}
+2020/05/17 16:17:50 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+    <h1>注册</h1>
+    <form action="/register" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">注册</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:17:55 ip and request, ('127.0.0.1', 9578)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:17:55 cookie ['']
+2020/05/17 16:17:55 path and query /register {}
+2020/05/17 16:17:55 debug 0
+2020/05/17 16:17:55 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:17:55 ip and request, ('127.0.0.1', 9579)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:17:55 cookie ['']
+2020/05/17 16:17:55 path and query /login {}
+2020/05/17 16:17:55 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:18:46 ip and request, ('127.0.0.1', 9590)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:18:46 cookie ['']
+2020/05/17 16:18:46 path and query /login {}
+2020/05/17 16:18:46 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=mhoaxmwqk93pdclw
+Location: /
+
+
+2020/05/17 16:18:46 ip and request, ('127.0.0.1', 9591)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:18:46 cookie ['user=mhoaxmwqk93pdclw']
+2020/05/17 16:18:46 path and query / {}
+2020/05/17 16:18:46 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:19:09 ip and request, ('127.0.0.1', 9609)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:19:09 cookie ['user=mhoaxmwqk93pdclw']
+2020/05/17 16:19:09 path and query /register {}
+2020/05/17 16:19:09 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+    <h1>注册</h1>
+    <form action="/register" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">注册</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:19:14 ip and request, ('127.0.0.1', 9610)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:19:14 cookie ['user=mhoaxmwqk93pdclw']
+2020/05/17 16:19:14 path and query /register {}
+2020/05/17 16:19:14 debug 1
+2020/05/17 16:19:14 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:19:14 ip and request, ('127.0.0.1', 9611)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:19:14 cookie ['user=mhoaxmwqk93pdclw']
+2020/05/17 16:19:14 path and query /login {}
+2020/05/17 16:19:14 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:19:40 ip and request, ('127.0.0.1', 9616)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:19:40 cookie ['user=mhoaxmwqk93pdclw']
+2020/05/17 16:19:40 path and query /login {}
+2020/05/17 16:19:40 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=86i7bhisoh82fm2e
+Location: /
+
+
+2020/05/17 16:19:40 ip and request, ('127.0.0.1', 9617)
+<__main__.Request object at 0x0000020E55CEEC08>
+2020/05/17 16:19:40 cookie ['user=86i7bhisoh82fm2e']
+2020/05/17 16:19:40 path and query / {}
+2020/05/17 16:19:40 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:20:22 start at :3000
+2020/05/17 16:20:30 ip and request, ('127.0.0.1', 9634)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:30 cookie ['user=86i7bhisoh82fm2e']
+2020/05/17 16:20:30 path and query /weibo/index {}
+2020/05/17 16:20:30 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:20:30 ip and request, ('127.0.0.1', 9635)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:30 cookie ['user=86i7bhisoh82fm2e']
+2020/05/17 16:20:30 path and query /login {}
+2020/05/17 16:20:30 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:20:34 ip and request, ('127.0.0.1', 9636)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:34 cookie ['user=86i7bhisoh82fm2e']
+2020/05/17 16:20:34 path and query /login {}
+2020/05/17 16:20:34 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=b4br2hh7lcxow74r
+Location: /
+
+
+2020/05/17 16:20:34 ip and request, ('127.0.0.1', 9637)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:34 cookie ['user=b4br2hh7lcxow74r']
+2020/05/17 16:20:34 path and query / {}
+2020/05/17 16:20:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:20:38 ip and request, ('127.0.0.1', 9638)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:38 cookie ['user=b4br2hh7lcxow74r']
+2020/05/17 16:20:38 path and query /weibo/index {}
+2020/05/17 16:20:38 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:20:38 ip and request, ('127.0.0.1', 9639)
+<__main__.Request object at 0x000001EE2473EC08>
+2020/05/17 16:20:38 cookie ['user=b4br2hh7lcxow74r']
+2020/05/17 16:20:38 path and query /login {}
+2020/05/17 16:20:38 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:21:38 start at :3000
+2020/05/17 16:21:43 start at :3000
+2020/05/17 16:21:50 ip and request, ('127.0.0.1', 9651)
+<__main__.Request object at 0x000001530F99EC08>
+2020/05/17 16:21:50 cookie ['user=b4br2hh7lcxow74r']
+2020/05/17 16:21:50 path and query /login {}
+2020/05/17 16:21:50 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=bathordfc2y4tk45
+Location: /
+
+
+2020/05/17 16:21:50 ip and request, ('127.0.0.1', 9652)
+<__main__.Request object at 0x000001530F99EC08>
+2020/05/17 16:21:50 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:21:50 path and query / {}
+2020/05/17 16:21:50 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:21:53 ip and request, ('127.0.0.1', 9655)
+<__main__.Request object at 0x000001530F99EC08>
+2020/05/17 16:21:53 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:21:53 path and query /weibo/index {}
+2020/05/17 16:21:53 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:21:53 ip and request, ('127.0.0.1', 9656)
+<__main__.Request object at 0x000001530F99EC08>
+2020/05/17 16:21:53 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:21:53 path and query /login {}
+2020/05/17 16:21:53 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:26:16 start at :3000
+2020/05/17 16:26:25 ip and request, ('127.0.0.1', 9701)
+<__main__.Request object at 0x000001C57F0EEC08>
+2020/05/17 16:26:25 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:26:25 path and query /weibo/index {}
+2020/05/17 16:26:25 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:26:25 ip and request, ('127.0.0.1', 9702)
+<__main__.Request object at 0x000001C57F0EEC08>
+2020/05/17 16:26:25 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:26:25 path and query /login {}
+2020/05/17 16:26:25 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:26:30 ip and request, ('127.0.0.1', 9704)
+<__main__.Request object at 0x000001C57F0EEC08>
+2020/05/17 16:26:30 cookie ['user=bathordfc2y4tk45']
+2020/05/17 16:26:30 path and query /login {}
+2020/05/17 16:26:30 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=aa821jk2uje379c2
+Location: /
+
+
+2020/05/17 16:26:30 ip and request, ('127.0.0.1', 9705)
+<__main__.Request object at 0x000001C57F0EEC08>
+2020/05/17 16:26:30 cookie ['user=aa821jk2uje379c2']
+2020/05/17 16:26:30 path and query / {}
+2020/05/17 16:26:30 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:26:33 ip and request, ('127.0.0.1', 9710)
+<__main__.Request object at 0x000001C57F0EEC08>
+2020/05/17 16:26:33 cookie ['user=aa821jk2uje379c2']
+2020/05/17 16:26:33 path and query /weibo/index {}
+2020/05/17 16:26:33 kwargs,  {'user_id': 1}
+2020/05/17 16:30:16 start at :3000
+2020/05/17 16:30:19 ip and request, ('127.0.0.1', 9755)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:19 cookie ['user=aa821jk2uje379c2']
+2020/05/17 16:30:19 path and query /weibo/index {}
+2020/05/17 16:30:19 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:30:19 ip and request, ('127.0.0.1', 9756)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:19 cookie ['user=aa821jk2uje379c2']
+2020/05/17 16:30:19 path and query /login {}
+2020/05/17 16:30:19 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:30:23 ip and request, ('127.0.0.1', 9758)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:23 cookie ['user=aa821jk2uje379c2']
+2020/05/17 16:30:23 path and query /login {}
+2020/05/17 16:30:23 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=qpkvzvey3xi7eulm
+Location: /
+
+
+2020/05/17 16:30:23 ip and request, ('127.0.0.1', 9759)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:23 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:30:23 path and query / {}
+2020/05/17 16:30:23 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:30:26 ip and request, ('127.0.0.1', 9764)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:26 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:30:26 path and query /weibo/index {}
+2020/05/17 16:30:26 kwargs,  {'user_id': 1}
+2020/05/17 16:30:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+</body>
+</html>
+2020/05/17 16:30:28 ip and request, ('127.0.0.1', 9765)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:28 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:30:28 path and query /weibo/new {}
+2020/05/17 16:30:28 登录鉴定, user_id  1
+2020/05/17 16:30:28 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo new</title>
+</head>
+<body>
+    <form action="/weibo/add" method="post">
+        <input name="content">
+        <br>
+        <button type="submit">发表新微博</button>
+    </form>
+</body>
+</html>
+2020/05/17 16:30:37 ip and request, ('127.0.0.1', 9766)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:37 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:30:37 path and query /weibo/add {}
+2020/05/17 16:30:37 登录鉴定, user_id  1
+2020/05/17 16:30:37 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 16:30:37 ip and request, ('127.0.0.1', 9771)
+<__main__.Request object at 0x0000021ED33DEBC8>
+2020/05/17 16:30:37 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:30:37 path and query /weibo/index {'user_id': '1'}
+2020/05/17 16:30:37 kwargs,  {'user_id': 1}
+2020/05/17 16:31:38 start at :3000
+2020/05/17 16:31:41 ip and request, ('127.0.0.1', 9797)
+<__main__.Request object at 0x000001BFC38AEC08>
+2020/05/17 16:31:41 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:31:41 path and query /weibo/index {'user_id': '1'}
+2020/05/17 16:31:41 kwargs,  {'user_id': 1}
+2020/05/17 16:31:41 kwargs,  {'weibo_id': 1}
+2020/05/17 16:32:22 start at :3000
+2020/05/17 16:32:25 ip and request, ('127.0.0.1', 9806)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:32:25 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:32:25 path and query /weibo/index {'user_id': '1'}
+2020/05/17 16:32:25 kwargs,  {'user_id': 1}
+2020/05/17 16:32:25 kwargs,  {'weibo_id': 1}
+2020/05/17 16:32:25 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:41:44 ip and request, ('127.0.0.1', 9885)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:44 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:41:44 path and query /weibo/new {}
+2020/05/17 16:41:44 登录鉴定, user_id  -1
+2020/05/17 16:41:44 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:41:44 ip and request, ('127.0.0.1', 9886)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:44 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:41:44 path and query /login {}
+2020/05/17 16:41:44 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:41:51 ip and request, ('127.0.0.1', 9887)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:51 cookie ['user=qpkvzvey3xi7eulm']
+2020/05/17 16:41:51 path and query /login {}
+2020/05/17 16:41:51 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=vgckaxtsyaauth6b
+Location: /
+
+
+2020/05/17 16:41:51 ip and request, ('127.0.0.1', 9888)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:51 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:41:51 path and query / {}
+2020/05/17 16:41:51 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:41:55 ip and request, ('127.0.0.1', 9892)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:55 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:41:55 path and query /weibo/index {}
+2020/05/17 16:41:55 kwargs,  {'user_id': 1}
+2020/05/17 16:41:55 kwargs,  {'weibo_id': 1}
+2020/05/17 16:41:55 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:41:56 ip and request, ('127.0.0.1', 9894)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:41:56 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:41:56 path and query /weibo/new {}
+2020/05/17 16:41:56 登录鉴定, user_id  1
+2020/05/17 16:41:56 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo new</title>
+</head>
+<body>
+    <form action="/weibo/add" method="post">
+        <input name="content">
+        <br>
+        <button type="submit">发表新微博</button>
+    </form>
+</body>
+</html>
+2020/05/17 16:42:04 ip and request, ('127.0.0.1', 9901)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:42:04 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:42:04 path and query /weibo/add {}
+2020/05/17 16:42:04 登录鉴定, user_id  1
+2020/05/17 16:42:04 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 16:42:04 ip and request, ('127.0.0.1', 9902)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:42:04 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:42:04 path and query /weibo/index {'user_id': '1'}
+2020/05/17 16:42:04 kwargs,  {'user_id': 1}
+2020/05/17 16:42:04 kwargs,  {'weibo_id': 1}
+2020/05/17 16:42:04 kwargs,  {'weibo_id': 2}
+2020/05/17 16:42:04 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:42:09 ip and request, ('127.0.0.1', 9907)
+<__main__.Request object at 0x000002D8EEBAEC08>
+2020/05/17 16:42:09 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:42:09 path and query /weibo/edit {'id': '{}'}
+2020/05/17 16:42:09 登录鉴定, user_id  1
+2020/05/17 16:50:15 start at :3000
+2020/05/17 16:50:26 ip and request, ('127.0.0.1', 10007)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:26 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:50:26 path and query /weibo/index {}
+2020/05/17 16:50:26 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:50:26 ip and request, ('127.0.0.1', 10008)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:26 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:50:26 path and query /login {}
+2020/05/17 16:50:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:50:30 ip and request, ('127.0.0.1', 10009)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:30 cookie ['user=vgckaxtsyaauth6b']
+2020/05/17 16:50:30 path and query /login {}
+2020/05/17 16:50:30 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=abmjzbtbhxaj9pwv
+Location: /
+
+
+2020/05/17 16:50:30 ip and request, ('127.0.0.1', 10010)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:30 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:50:30 path and query / {}
+2020/05/17 16:50:30 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:50:34 ip and request, ('127.0.0.1', 10013)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:34 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:50:34 path and query /weibo/index {}
+2020/05/17 16:50:34 kwargs,  {'user_id': 1}
+2020/05/17 16:50:34 kwargs,  {'weibo_id': 1}
+2020/05/17 16:50:34 kwargs,  {'weibo_id': 2}
+2020/05/17 16:50:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:50:36 ip and request, ('127.0.0.1', 10014)
+<__main__.Request object at 0x000001F28744EC08>
+2020/05/17 16:50:36 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:50:36 path and query /weibo/edit {'id': '{}'}
+2020/05/17 16:50:36 登录鉴定, user_id  1
+2020/05/17 16:51:33 start at :3000
+2020/05/17 16:51:39 ip and request, ('127.0.0.1', 10030)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:39 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:51:39 path and query /weibo/index {}
+2020/05/17 16:51:39 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:51:39 ip and request, ('127.0.0.1', 10031)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:39 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:51:39 path and query /login {}
+2020/05/17 16:51:39 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:51:42 ip and request, ('127.0.0.1', 10032)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:42 cookie ['user=abmjzbtbhxaj9pwv']
+2020/05/17 16:51:42 path and query /login {}
+2020/05/17 16:51:42 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=wphinkvnqf4v3kaw
+Location: /
+
+
+2020/05/17 16:51:42 ip and request, ('127.0.0.1', 10033)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:42 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:51:42 path and query / {}
+2020/05/17 16:51:42 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:51:45 ip and request, ('127.0.0.1', 10036)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:45 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:51:45 path and query /weibo/index {}
+2020/05/17 16:51:45 kwargs,  {'user_id': 1}
+2020/05/17 16:51:45 kwargs,  {'weibo_id': 1}
+2020/05/17 16:51:45 kwargs,  {'weibo_id': 2}
+2020/05/17 16:51:45 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id={}">删除</a>
+        <a href="/weibo/edit?id={}">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:51:47 ip and request, ('127.0.0.1', 10037)
+<__main__.Request object at 0x000001A27F3FEC08>
+2020/05/17 16:51:47 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:51:47 path and query /weibo/edit {'id': '{}'}
+2020/05/17 16:51:47 登录鉴定, user_id  1
+2020/05/17 16:53:22 start at :3000
+2020/05/17 16:53:25 ip and request, ('127.0.0.1', 10052)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:25 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:53:25 path and query / {}
+2020/05/17 16:53:25 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:53:28 ip and request, ('127.0.0.1', 10055)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:28 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:53:28 path and query /weibo/index {}
+2020/05/17 16:53:28 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:53:28 ip and request, ('127.0.0.1', 10056)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:28 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:53:28 path and query /login {}
+2020/05/17 16:53:28 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:53:31 ip and request, ('127.0.0.1', 10057)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:31 cookie ['user=wphinkvnqf4v3kaw']
+2020/05/17 16:53:31 path and query /login {}
+2020/05/17 16:53:31 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=g3vbkfuv7vec8h5w
+Location: /
+
+
+2020/05/17 16:53:31 ip and request, ('127.0.0.1', 10058)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:31 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:53:31 path and query / {}
+2020/05/17 16:53:31 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:53:34 ip and request, ('127.0.0.1', 10061)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:34 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:53:34 path and query /weibo/index {}
+2020/05/17 16:53:34 kwargs,  {'user_id': 1}
+2020/05/17 16:53:34 kwargs,  {'weibo_id': 1}
+2020/05/17 16:53:34 kwargs,  {'weibo_id': 2}
+2020/05/17 16:53:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:53:35 ip and request, ('127.0.0.1', 10062)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:35 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:53:35 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:53:35 登录鉴定, user_id  1
+2020/05/17 16:53:35 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/edit?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:53:41 ip and request, ('127.0.0.1', 10063)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:41 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:53:41 path and query /edit {'id': '1'}
+2020/05/17 16:53:41 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO edit</title>
+</head>
+<body>
+  <form action="/update?id=1" method="post">
+    <input name="task" value="吃饭了">
+    <button>update todo</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:53:57 ip and request, ('127.0.0.1', 10069)
+<__main__.Request object at 0x000002CF38D7EC08>
+2020/05/17 16:53:57 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:53:57 path and query /weibo/index {}
+2020/05/17 16:53:57 kwargs,  {'user_id': 1}
+2020/05/17 16:53:57 kwargs,  {'weibo_id': 1}
+2020/05/17 16:53:57 kwargs,  {'weibo_id': 2}
+2020/05/17 16:53:57 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:56:20 start at :3000
+2020/05/17 16:56:25 ip and request, ('127.0.0.1', 10096)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:25 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:56:25 path and query /weibo/index {}
+2020/05/17 16:56:25 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:56:25 ip and request, ('127.0.0.1', 10097)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:25 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:56:25 path and query /login {}
+2020/05/17 16:56:25 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:56:29 ip and request, ('127.0.0.1', 10098)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:29 cookie ['user=g3vbkfuv7vec8h5w']
+2020/05/17 16:56:29 path and query /login {}
+2020/05/17 16:56:29 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=j28h1sn11tlab4cm
+Location: /
+
+
+2020/05/17 16:56:29 ip and request, ('127.0.0.1', 10099)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:29 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:56:29 path and query / {}
+2020/05/17 16:56:29 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:56:33 ip and request, ('127.0.0.1', 10100)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:33 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:56:33 path and query /weibo/index {}
+2020/05/17 16:56:33 kwargs,  {'user_id': 1}
+2020/05/17 16:56:33 kwargs,  {'weibo_id': 1}
+2020/05/17 16:56:33 kwargs,  {'weibo_id': 2}
+2020/05/17 16:56:33 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:56:34 ip and request, ('127.0.0.1', 10101)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:34 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:56:34 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:56:34 登录鉴定, user_id  1
+2020/05/17 16:56:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/edit?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:56:41 ip and request, ('127.0.0.1', 10102)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:41 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:56:41 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:56:41 登录鉴定, user_id  1
+2020/05/17 16:56:41 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/edit?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:56:54 ip and request, ('127.0.0.1', 10103)
+<__main__.Request object at 0x000001F13F2AEC08>
+2020/05/17 16:56:54 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:56:54 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:56:54 登录鉴定, user_id  1
+2020/05/17 16:56:54 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/edit?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:58:04 start at :3000
+2020/05/17 16:58:08 ip and request, ('127.0.0.1', 10118)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:08 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:58:08 path and query /weibo/index {}
+2020/05/17 16:58:08 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:58:08 ip and request, ('127.0.0.1', 10119)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:08 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:58:08 path and query /login {}
+2020/05/17 16:58:08 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:58:12 ip and request, ('127.0.0.1', 10120)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:12 cookie ['user=j28h1sn11tlab4cm']
+2020/05/17 16:58:12 path and query /login {}
+2020/05/17 16:58:12 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=c5aqwthutv2johuq
+Location: /
+
+
+2020/05/17 16:58:12 ip and request, ('127.0.0.1', 10121)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:12 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:58:12 path and query / {}
+2020/05/17 16:58:12 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:58:15 ip and request, ('127.0.0.1', 10124)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:15 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:58:15 path and query /weibo/index {}
+2020/05/17 16:58:15 kwargs,  {'user_id': 1}
+2020/05/17 16:58:15 kwargs,  {'weibo_id': 1}
+2020/05/17 16:58:15 kwargs,  {'weibo_id': 2}
+2020/05/17 16:58:15 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:58:16 ip and request, ('127.0.0.1', 10125)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:16 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:58:16 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:58:16 登录鉴定, user_id  1
+2020/05/17 16:58:16 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:58:18 ip and request, ('127.0.0.1', 10126)
+<__main__.Request object at 0x00000266CEF4EC08>
+2020/05/17 16:58:18 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:58:18 path and query /weibo/update {'id': '1'}
+2020/05/17 16:58:18 登录鉴定, user_id  1
+2020/05/17 16:59:32 start at :3000
+2020/05/17 16:59:38 ip and request, ('127.0.0.1', 10157)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:38 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:59:38 path and query /weibo/index {}
+2020/05/17 16:59:38 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 16:59:38 ip and request, ('127.0.0.1', 10158)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:38 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:59:38 path and query /login {}
+2020/05/17 16:59:38 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 16:59:41 ip and request, ('127.0.0.1', 10159)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:41 cookie ['user=c5aqwthutv2johuq']
+2020/05/17 16:59:41 path and query /login {}
+2020/05/17 16:59:41 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=bwemm81c2b3faxxi
+Location: /
+
+
+2020/05/17 16:59:41 ip and request, ('127.0.0.1', 10160)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:41 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 16:59:41 path and query / {}
+2020/05/17 16:59:41 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 16:59:44 ip and request, ('127.0.0.1', 10163)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:44 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 16:59:44 path and query /weibo/index {}
+2020/05/17 16:59:44 kwargs,  {'user_id': 1}
+2020/05/17 16:59:44 kwargs,  {'weibo_id': 1}
+2020/05/17 16:59:44 kwargs,  {'weibo_id': 2}
+2020/05/17 16:59:44 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 16:59:45 ip and request, ('127.0.0.1', 10164)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:45 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 16:59:45 path and query /weibo/edit {'id': '1'}
+2020/05/17 16:59:45 登录鉴定, user_id  1
+2020/05/17 16:59:45 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 16:59:48 ip and request, ('127.0.0.1', 10165)
+<__main__.Request object at 0x000001F5D3B3EC08>
+2020/05/17 16:59:48 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 16:59:48 path and query /weibo/update {'id': '1'}
+2020/05/17 16:59:48 登录鉴定, user_id  1
+2020/05/17 17:00:09 start at :3000
+2020/05/17 17:00:14 ip and request, ('127.0.0.1', 10169)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:14 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 17:00:14 path and query /weibo/index {}
+2020/05/17 17:00:14 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:00:14 ip and request, ('127.0.0.1', 10170)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:14 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 17:00:14 path and query /login {}
+2020/05/17 17:00:14 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:00:17 ip and request, ('127.0.0.1', 10172)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:17 cookie ['user=bwemm81c2b3faxxi']
+2020/05/17 17:00:17 path and query /login {}
+2020/05/17 17:00:17 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=2ty5ian791ua9wkf
+Location: /
+
+
+2020/05/17 17:00:17 ip and request, ('127.0.0.1', 10173)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:17 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:00:17 path and query / {}
+2020/05/17 17:00:17 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:00:21 ip and request, ('127.0.0.1', 10176)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:21 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:00:21 path and query /weibo/index {}
+2020/05/17 17:00:21 kwargs,  {'user_id': 1}
+2020/05/17 17:00:21 kwargs,  {'weibo_id': 1}
+2020/05/17 17:00:21 kwargs,  {'weibo_id': 2}
+2020/05/17 17:00:21 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:00:22 ip and request, ('127.0.0.1', 10178)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:22 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:00:22 path and query /weibo/edit {'id': '1'}
+2020/05/17 17:00:22 登录鉴定, user_id  1
+2020/05/17 17:00:22 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 17:00:25 ip and request, ('127.0.0.1', 10180)
+<__main__.Request object at 0x000001F131E43548>
+2020/05/17 17:00:25 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:00:25 path and query /weibo/update {'id': '1'}
+2020/05/17 17:00:25 登录鉴定, user_id  1
+2020/05/17 17:02:50 start at :3000
+2020/05/17 17:02:55 ip and request, ('127.0.0.1', 10202)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:02:55 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:02:55 path and query /weibo/index {}
+2020/05/17 17:02:55 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:02:55 ip and request, ('127.0.0.1', 10203)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:02:55 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:02:55 path and query /login {}
+2020/05/17 17:02:55 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:02:59 ip and request, ('127.0.0.1', 10205)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:02:59 cookie ['user=2ty5ian791ua9wkf']
+2020/05/17 17:02:59 path and query /login {}
+2020/05/17 17:02:59 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=xllyblwwtu8anbr8
+Location: /
+
+
+2020/05/17 17:02:59 ip and request, ('127.0.0.1', 10206)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:02:59 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:02:59 path and query / {}
+2020/05/17 17:02:59 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:03:01 ip and request, ('127.0.0.1', 10210)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:03:01 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:03:01 path and query /weibo/index {}
+2020/05/17 17:03:01 kwargs,  {'user_id': 1}
+2020/05/17 17:03:01 kwargs,  {'weibo_id': 1}
+2020/05/17 17:03:01 kwargs,  {'weibo_id': 2}
+2020/05/17 17:03:01 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:03:03 ip and request, ('127.0.0.1', 10212)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:03:03 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:03:03 path and query /weibo/edit {'id': '1'}
+2020/05/17 17:03:03 登录鉴定, user_id  1
+2020/05/17 17:03:03 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 17:03:05 ip and request, ('127.0.0.1', 10214)
+<__main__.Request object at 0x0000026C39FBEC08>
+2020/05/17 17:03:05 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:03:05 path and query /weibo/update {'id': '1'}
+2020/05/17 17:03:05 登录鉴定, user_id  1
+2020/05/17 17:04:21 start at :3000
+2020/05/17 17:04:26 ip and request, ('127.0.0.1', 10225)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:26 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:04:26 path and query /weibo/index {}
+2020/05/17 17:04:26 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:04:26 ip and request, ('127.0.0.1', 10226)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:26 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:04:26 path and query /login {}
+2020/05/17 17:04:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:04:30 ip and request, ('127.0.0.1', 10227)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:30 cookie ['user=xllyblwwtu8anbr8']
+2020/05/17 17:04:30 path and query /login {}
+2020/05/17 17:04:30 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=o1p3w1ogxv62kwhp
+Location: /
+
+
+2020/05/17 17:04:30 ip and request, ('127.0.0.1', 10228)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:30 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:04:30 path and query / {}
+2020/05/17 17:04:30 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:04:33 ip and request, ('127.0.0.1', 10232)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:33 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:04:33 path and query /weibo/index {}
+2020/05/17 17:04:33 kwargs,  {'user_id': 1}
+2020/05/17 17:04:33 kwargs,  {'weibo_id': 1}
+2020/05/17 17:04:33 kwargs,  {'weibo_id': 2}
+2020/05/17 17:04:33 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:04:34 ip and request, ('127.0.0.1', 10233)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:34 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:04:34 path and query /weibo/edit {'id': '1'}
+2020/05/17 17:04:34 登录鉴定, user_id  1
+2020/05/17 17:04:34 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 17:04:36 ip and request, ('127.0.0.1', 10234)
+<__main__.Request object at 0x000001DAD5C9EBC8>
+2020/05/17 17:04:36 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:04:36 path and query /weibo/update {'id': '1'}
+2020/05/17 17:04:36 登录鉴定, user_id  1
+2020/05/17 17:06:12 start at :3000
+2020/05/17 17:06:16 ip and request, ('127.0.0.1', 10253)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:16 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:06:16 path and query /weibo/index {}
+2020/05/17 17:06:16 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:06:16 ip and request, ('127.0.0.1', 10254)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:16 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:06:16 path and query /login {}
+2020/05/17 17:06:16 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:06:20 ip and request, ('127.0.0.1', 10256)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:20 cookie ['user=o1p3w1ogxv62kwhp']
+2020/05/17 17:06:20 path and query /login {}
+2020/05/17 17:06:20 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=lnruu8uksl9utlao
+Location: /
+
+
+2020/05/17 17:06:20 ip and request, ('127.0.0.1', 10257)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:20 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:06:20 path and query / {}
+2020/05/17 17:06:20 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:06:24 ip and request, ('127.0.0.1', 10260)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:24 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:06:24 path and query /weibo/index {}
+2020/05/17 17:06:24 kwargs,  {'user_id': 1}
+2020/05/17 17:06:24 kwargs,  {'weibo_id': 1}
+2020/05/17 17:06:24 kwargs,  {'weibo_id': 2}
+2020/05/17 17:06:24 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:06:26 ip and request, ('127.0.0.1', 10261)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:26 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:06:26 path and query /weibo/edit {'id': '1'}
+2020/05/17 17:06:26 登录鉴定, user_id  1
+2020/05/17 17:06:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 17:06:28 ip and request, ('127.0.0.1', 10262)
+<__main__.Request object at 0x000001A9525CEC08>
+2020/05/17 17:06:28 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:06:28 path and query /weibo/update {'id': '1'}
+2020/05/17 17:06:28 登录鉴定, user_id  1
+2020/05/17 17:07:48 start at :3000
+2020/05/17 17:07:52 ip and request, ('127.0.0.1', 10276)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:07:52 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:07:52 path and query /weibo/index {}
+2020/05/17 17:07:52 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:07:52 ip and request, ('127.0.0.1', 10277)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:07:52 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:07:52 path and query /login {}
+2020/05/17 17:07:52 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:07:56 ip and request, ('127.0.0.1', 10278)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:07:56 cookie ['user=lnruu8uksl9utlao']
+2020/05/17 17:07:56 path and query /login {}
+2020/05/17 17:07:56 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=qq4m2ea3clc8b438
+Location: /
+
+
+2020/05/17 17:07:56 ip and request, ('127.0.0.1', 10279)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:07:56 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:07:56 path and query / {}
+2020/05/17 17:07:56 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:07:59 ip and request, ('127.0.0.1', 10280)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:08:00 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:08:00 path and query /weibo/index {}
+2020/05/17 17:08:00 kwargs,  {'user_id': 1}
+2020/05/17 17:08:00 kwargs,  {'weibo_id': 1}
+2020/05/17 17:08:00 kwargs,  {'weibo_id': 2}
+2020/05/17 17:08:00 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:08:01 ip and request, ('127.0.0.1', 10281)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:08:01 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:08:01 path and query /weibo/edit {'id': '1'}
+2020/05/17 17:08:01 登录鉴定, user_id  1
+2020/05/17 17:08:01 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weibo edit</title>
+</head>
+<body>
+  <form action="/weibo/update?id=1" method="post">
+    <input name="content" value="第一条微博">
+    <br>
+    <button>更新微博</button>
+  </form>
+</body>
+</html>
+2020/05/17 17:08:03 ip and request, ('127.0.0.1', 10282)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:08:03 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:08:03 path and query /weibo/update {'id': '1'}
+2020/05/17 17:08:03 登录鉴定, user_id  1
+2020/05/17 17:08:03 debug 0
+2020/05/17 17:08:03 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 17:08:03 ip and request, ('127.0.0.1', 10283)
+<__main__.Request object at 0x0000022917FCEBC8>
+2020/05/17 17:08:03 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:08:03 path and query /weibo/index {'user_id': '1'}
+2020/05/17 17:08:03 kwargs,  {'user_id': 1}
+2020/05/17 17:08:03 kwargs,  {'weibo_id': 1}
+2020/05/17 17:08:03 kwargs,  {'weibo_id': 2}
+2020/05/17 17:08:03 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:15:34 start at :3000
+2020/05/17 17:15:49 ip and request, ('127.0.0.1', 10515)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:49 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:15:49 path and query /weibo/index {}
+2020/05/17 17:15:49 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /login
+
+
+2020/05/17 17:15:49 ip and request, ('127.0.0.1', 10516)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:49 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:15:49 path and query /login {}
+2020/05/17 17:15:49 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:15:53 ip and request, ('127.0.0.1', 10517)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:53 cookie ['user=qq4m2ea3clc8b438']
+2020/05/17 17:15:53 path and query /login {}
+2020/05/17 17:15:53 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=el2h8py7g2osfklb
+Location: /
+
+
+2020/05/17 17:15:53 ip and request, ('127.0.0.1', 10518)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:53 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:15:53 path and query / {}
+2020/05/17 17:15:53 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:15:55 ip and request, ('127.0.0.1', 10521)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:56 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:15:56 path and query /weibo/index {}
+2020/05/17 17:15:56 kwargs,  {'user_id': 1}
+2020/05/17 17:15:56 kwargs,  {'weibo_id': 1}
+2020/05/17 17:15:56 kwargs,  {'weibo_id': 2}
+2020/05/17 17:15:56 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:15:58 ip and request, ('127.0.0.1', 10522)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:58 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:15:58 path and query /comment/add {}
+2020/05/17 17:15:58 登录鉴定, user_id  1
+2020/05/17 17:15:58 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 17:15:58 ip and request, ('127.0.0.1', 10523)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:15:58 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:15:58 path and query /weibo/index {'user_id': '1'}
+2020/05/17 17:15:58 kwargs,  {'user_id': 1}
+2020/05/17 17:15:58 kwargs,  {'weibo_id': 1}
+2020/05/17 17:15:58 kwargs,  {'weibo_id': 2}
+2020/05/17 17:15:58 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:16:14 ip and request, ('127.0.0.1', 10524)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:14 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:14 path and query /comment/add {}
+2020/05/17 17:16:14 登录鉴定, user_id  1
+2020/05/17 17:16:14 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 17:16:14 ip and request, ('127.0.0.1', 10525)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:14 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:14 path and query /weibo/index {'user_id': '1'}
+2020/05/17 17:16:14 kwargs,  {'user_id': 1}
+2020/05/17 17:16:14 kwargs,  {'weibo_id': 1}
+2020/05/17 17:16:14 kwargs,  {'weibo_id': 2}
+2020/05/17 17:16:14 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <div class="comment">
+            tao : 评论2
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:16:19 ip and request, ('127.0.0.1', 10526)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:19 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:19 path and query /comment/add {}
+2020/05/17 17:16:19 登录鉴定, user_id  1
+2020/05/17 17:16:19 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 17:16:19 ip and request, ('127.0.0.1', 10527)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:19 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:19 path and query /weibo/index {'user_id': '1'}
+2020/05/17 17:16:19 kwargs,  {'user_id': 1}
+2020/05/17 17:16:19 kwargs,  {'weibo_id': 1}
+2020/05/17 17:16:19 kwargs,  {'weibo_id': 2}
+2020/05/17 17:16:19 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <div class="comment">
+            tao : 评论2
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:16:21 ip and request, ('127.0.0.1', 10528)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:21 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:21 path and query /comment/add {}
+2020/05/17 17:16:21 登录鉴定, user_id  1
+2020/05/17 17:16:21 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Location: /weibo/index?user_id=1
+
+
+2020/05/17 17:16:21 ip and request, ('127.0.0.1', 10529)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:16:21 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:16:21 path and query /weibo/index {'user_id': '1'}
+2020/05/17 17:16:21 kwargs,  {'user_id': 1}
+2020/05/17 17:16:21 kwargs,  {'weibo_id': 1}
+2020/05/17 17:16:21 kwargs,  {'weibo_id': 2}
+2020/05/17 17:16:21 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+    <p>
+        第一条微博改 from tao
+        <a href="/weibo/delete?id=1">删除</a>
+        <a href="/weibo/edit?id=1">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <div class="comment">
+            tao : 评论2
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="1">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+    <p>
+        第二条微博 from tao
+        <a href="/weibo/delete?id=2">删除</a>
+        <a href="/weibo/edit?id=2">修改</a>
+        
+        <div class="comment">
+            tao : 评论1
+        </div>
+        
+        <div class="comment">
+            tao : 评论2
+        </div>
+        
+        <form action="/comment/add" method="post">
+            <input type="hidden" name="weibo_id" value="2">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
+    </p>
+    
+</body>
+</html>
+2020/05/17 17:18:10 ip and request, ('127.0.0.1', 10548)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:18:10 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:18:10 path and query /login {}
+2020/05/17 17:18:10 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:18:18 ip and request, ('127.0.0.1', 10552)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:18:18 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:18:18 path and query /login {}
+2020/05/17 17:18:18 response: HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册登录页面</title>
+</head>
+<body>
+    <h1>登录</h1>
+    <h2>你好 </h2>
+    <form action="/login" method="post">
+        <input type="text" name="username" placeholder="请输入用户名">
+        <br>
+        <input type="text" name="password" placeholder="请输入密码">
+        <br>
+        <button type="submit">登录</button>
+    </form>
+    <h3></h3>
+</body>
+</html>
+2020/05/17 17:18:23 ip and request, ('127.0.0.1', 10554)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:18:23 cookie ['user=el2h8py7g2osfklb']
+2020/05/17 17:18:23 path and query /login {}
+2020/05/17 17:18:23 response: HTTP/1.1 302 VERY OK
+Content-Type: text/html
+Set-Cookie: user=1eog16fgvsrdkbf7
+Location: /
+
+
+2020/05/17 17:18:23 ip and request, ('127.0.0.1', 10555)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:18:23 cookie ['user=1eog16fgvsrdkbf7']
+2020/05/17 17:18:23 path and query / {}
+2020/05/17 17:18:23 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple TODO</title>
+</head>
+<body>
+  <form action="/add" method="post">
+    <input name="task">
+    <button>add todo</button>
+  </form>
+  
+    <div>
+      1 : 吃饭了
+      <a href="/edit?id=1">编辑</a>
+      <a href="/delete?id=1">删除</a>
+    </div>
+  
+    <div>
+      2 : 睡觉
+      <a href="/edit?id=2">编辑</a>
+      <a href="/delete?id=2">删除</a>
+    </div>
+  
+</body>
+</html>
+2020/05/17 17:18:26 ip and request, ('127.0.0.1', 10556)
+<__main__.Request object at 0x000001C22524EC08>
+2020/05/17 17:18:26 cookie ['user=1eog16fgvsrdkbf7']
+2020/05/17 17:18:26 path and query /weibo/index {}
+2020/05/17 17:18:26 kwargs,  {'user_id': 2}
+2020/05/17 17:18:26 response: HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    
+</body>
+</html>

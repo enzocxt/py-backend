@@ -2,11 +2,12 @@ import socket
 import urllib.parse
 
 from utils import log
+from utils import error
 
-from routes import route_static
-from routes import route_dict
-from routes_todo import route_dict as todo_routes
-from routes_user import route_dict as user_routes
+from routes.routes_static import route_dict as static_routes
+from routes.routes_todo import route_dict as todo_routes
+from routes.routes_user import route_dict as user_routes
+from routes.routes_weibo import route_dict as weibo_routes
 
 
 # 定义一个 class 用于保存请求的数据
@@ -61,17 +62,6 @@ class Request(object):
 request = Request()
 
 
-def error(request, code=404):
-    """
-    根据 code 返回不同的错误响应
-    目前只有 404
-    """
-    e = {
-        404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
-    }
-    return e.get(code, b'')
-
-
 def parsed_path(path):
     """
     message=hello&author=gua
@@ -103,7 +93,7 @@ def response_for_path(path):
     request.query = query
     log('path and query', path, query)
     r = {
-        '/static': route_static,
+        '/static': static_routes,
         # '/': route_index,
         # '/login': route_login,
         # '/messages': route_message,
@@ -111,6 +101,7 @@ def response_for_path(path):
     # r.update(route_dict)
     r.update(todo_routes)
     r.update(user_routes)
+    r.update(weibo_routes)
     response = r.get(path, error)
     return response(request)
 

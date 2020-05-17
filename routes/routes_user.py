@@ -1,23 +1,10 @@
 from utils import log
+from utils import random_str
 from utils import template
 from utils import redirect
 from utils import http_response
 from models.user import User
-import random
-
-session = {}
-
-
-def random_str():
-    """
-    生成一个随机字符串
-    """
-    seed = "qwertyuiopasdfghjklzxcvbnm1234567890"
-    s = ''
-    for i in range(16):
-        random_index = random.randint(0, len(seed) - 2)
-        s += seed[random_index]
-    return s
+from routes.session import session
 
 
 def route_login(request):
@@ -33,6 +20,7 @@ def route_login(request):
         u = User.new(form)
         if u.validate_login():
             user = User.find_by(username=u.username)
+            # 设置 session
             # 设置一个随机字符串来当令牌使用
             session_id = random_str()
             session[session_id] = user.id
@@ -41,9 +29,7 @@ def route_login(request):
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
             # log('headers response', headers)
             # 登录后重定向到 /
-            return redirect('/')
-        else:
-            result = '用户名或者密码错误'
+            return redirect('/', headers)
     # 显示登录页面
     body = template('login.html')
     return http_response(body, headers=headers)

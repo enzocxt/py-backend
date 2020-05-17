@@ -1,24 +1,13 @@
 from utils import log
-# from models.message import Message
+from utils import random_str
 from models.user import User
-import os
-import random
+from . import http_response
+from . import response_with_headers
+
 
 # 保存所有的 messages
 message_list = []
 session = {}
-
-
-def random_str():
-    """
-    生成一个随机字符串
-    """
-    seed = "qwertyuiopasdfghjklzxcvbnm1234567890"
-    s = ''
-    for i in range(16):
-        random_index = random.randint(0, len(seed) - 2)
-        s += seed[random_index]
-    return s
 
 
 def current_user(request):
@@ -42,23 +31,10 @@ def route_index(request):
     """
     主页的处理函数, 返回主页的响应
     """
-    header = 'HTTP/1.1 200 VERY OK\r\nContent-Type: text/html\r\n'
     body = template('index.html')
     username = current_user(request)
     body = body.replace('{{username}}', username)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
-
-
-def response_with_headers(headers, code=200):
-    """
-    Content-Type: text/html
-    Set-Cookie: user=gua
-    """
-    header = 'HTTP/1.1 {} VERY OK\r\n'.format(code)
-    header += ''.join(['{}: {}\r\n'.format(k, v)
-                       for k, v in headers.items()])
-    return header
+    return http_response(body)
 
 
 def route_login(request):
