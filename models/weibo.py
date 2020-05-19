@@ -11,5 +11,11 @@ class Weibo(Model):
         self.content = form.get('content', '')
         self.user_id = form.get('user_id', user_id)
 
+    def json(self):
+        d = self.__dict__.copy()
+        comments = [c.json() for c in self.comments()]
+        d['comment'] = comments
+        return d
+
     def comments(self):
         return Comment.find_all(weibo_id=self.id)

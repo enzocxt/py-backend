@@ -2,12 +2,14 @@ from models.user import User
 from models.weibo import Weibo
 from models.comment import Comment
 
-from utils import log
-from utils import template
-from utils import redirect
-from utils import response_with_headers
-from utils import http_response
-from utils import error
+from utils import (
+    log,
+    template,
+    redirect,
+    response_with_headers,
+    http_response,
+    error,
+)
 
 from .session import session
 
