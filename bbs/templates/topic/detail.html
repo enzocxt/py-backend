@@ -18,23 +18,23 @@
     <div id="content">
         <div class='panel'>
             <div class='header topic_header'>
-        <span class="topic_full_title">
-			{{ topic.title }}
-      	</span>
+                <span class="topic_full_title">
+                    {{ topic.title }}
+                </span>
                 <div class="changes">
-            <span>
-                发布于 2 天前
-            </span>
                     <span>
-                作者
-                <a href="/user/hopperhuang">hopperhuang</a>
-        	</span>
+                        发布于 2 天前
+                    </span>
                     <span>
-          	    {{ topic.views }} 次浏览
-        	</span>
+                        作者
+                        <a href="/user/hopperhuang">hopperhuang</a>
+                    </span>
                     <span>
-                来自 问答
-            </span>
+                        {{ topic.views }} 次浏览
+                    </span>
+                    <span>
+                        来自 问答
+                    </span>
                 </div>
             </div>
 
@@ -67,7 +67,7 @@
                         {{ r.user().username }}
                     </a>
                     <a class="reply_time">
-                        {{ loop.index }}楼 • 2 天前
+                        {{ loop.index }} 楼 • 2 天前
                     </a>
                 </div>
                 <div class='user_action'>
@@ -87,13 +87,14 @@
             </div>
         </div>
         {% endfor %}
-{#        <div>#}
-{#            <form action="{{ url_for('reply.add') }}" method="post">#}
-{#                <input type="hidden" name="topic_id" value="{{ topic.id }}">#}
-{#                <textarea name="content"></textarea>#}
-{#                <button>添加回复</button>#}
-{#            </form>#}
-{#        </div>#}
+        <div>
+            <form action="{{ url_for('reply.add') }}" method="post">
+                <input type="hidden" name="topic_id" value="{{ topic.id }}">
+                <textarea name="content"></textarea>
+                <button>添加回复</button>
+            </form>
+        </div>
     </div>
+</div>
 </body>
 </html>
