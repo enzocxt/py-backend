@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+</head>
+<body>
+    <form method="POST" action={{ url_for('.add') }}>
+        <input type="text" name="author" placeholder="author">
+        <input type="text" name="content" placeholder="content">
+        <button type="submit">提交</button>
+    </form>
+    <div>
+        {% for c in comments %}
+            <div>{{ c.content }} from {{ c.author }} @ {{ c.time() }}</div>
+        {% endfor %}
+    </div>
+</body>
+</html>

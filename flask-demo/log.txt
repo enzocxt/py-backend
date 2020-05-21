@@ -1,0 +1,9 @@
+2020/05/19 18:30:54 请求方法 GET
+2020/05/19 18:30:54 request, query 参数 ImmutableMultiDict([])
+20:38:07 kwargs,  {'blog_id': 1} <class 'dict'>
+20:38:38 kwargs,  {'blog_id': 1} <class 'dict'>
+20:38:38 kwargs,  {'id': 1} <class 'dict'>
+20:38:54 kwargs,  {'blog_id': 1} <class 'dict'>
+20:38:54 kwargs,  {'id': 1} <class 'dict'>
+20:39:01 kwargs,  {'blog_id': 1} <class 'dict'>
+20:39:01 kwargs,  {'id': 1} <class 'dict'>
