@@ -12,6 +12,9 @@ from models.topic import Topic
 
 
 main = Blueprint('topic', __name__)
+"""
+
+"""
 
 
 @main.route('/')
@@ -31,3 +34,10 @@ def add():
 @main.route('/new')
 def new():
     return render_template('topic/new.html')
+
+
+@main.route('/<int:id>')
+def detail(id):
+    m = Topic.get(id)
+    # 传递 topic 的所有 reply 到页面中
+    return render_template('topic/detail.html', topic=m)
