@@ -25,10 +25,11 @@ app.secret_key = config.secret_key
 from routes.index import main as index_routes
 from routes.topic import main as topic_routes
 from routes.reply import main as reply_routes
+from routes.board import main as board_routes
 app.register_blueprint(index_routes)
 app.register_blueprint(topic_routes, url_prefix='/topic')
 app.register_blueprint(reply_routes, url_prefix='/reply')
-
+app.register_blueprint(board_routes, url_prefix='/board')
 """
 1. 拆分有哪些页面 一个页面就可以了
     1.1 首先要有 index 页面，其中有 login, register 路由
