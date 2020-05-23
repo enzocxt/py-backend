@@ -13,6 +13,7 @@ from utils import log
 # 无限循环监听 request
 # parse request 得到 method, path, query, body
 # 使用 路由函数 返回不同的 response
+# models 中包含所有的数据类
 
 
 # 定义一个 class 用于保存请求的数据

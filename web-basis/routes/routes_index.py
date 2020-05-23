@@ -8,7 +8,7 @@ def template(name):
         return fin.read()
 
 
-def route_index():
+def route_index(request):
     """
     主页的处理函数，返回主页的响应
     """
