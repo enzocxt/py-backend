@@ -39,10 +39,16 @@
                         {% for t in ms %}
                         <div class="cell">
                             <div class="topic_title_wrapper">
+                                <a class="user_avatar pull-left">
+                                    <img src={{ '/uploads/' + t.user().user_image + '?v=2&amp;s=120' }} title="atian25>
+                                </a>
                                 <a class="topic_title" href="{{ url_for('topic.detail', id=t.id) }}">
                                     {{ t.title }}
                                 </a>
-{#                                <span>{{ t.replies() | count }} / {{ t.views }}</span>#}
+                                <span>{{ t.replies() | count }} / {{ t.views }}</span>
+                                <a class="topic_title" href="{{ url_for('topic.delete', id=t.id, token=token) }}">
+                                    删除
+                                </a>
                             </div>
                         </div>
                         {% endfor %}
