@@ -26,10 +26,12 @@ from routes.index import main as index_routes
 from routes.topic import main as topic_routes
 from routes.reply import main as reply_routes
 from routes.board import main as board_routes
+from routes.mail import main as mail_routes
 app.register_blueprint(index_routes)
 app.register_blueprint(topic_routes, url_prefix='/topic')
 app.register_blueprint(reply_routes, url_prefix='/reply')
 app.register_blueprint(board_routes, url_prefix='/board')
+app.register_blueprint(mail_routes, url_prefix='/mail')
 """
 1. 拆分有哪些页面 一个页面就可以了
     1.1 首先要有 index 页面，其中有 login, register 路由
@@ -64,6 +66,16 @@ User 数据的方法
     1. 文件后缀要做过滤 img png gif
     2. 文件名也要小心
 3. GET 方法，本地的静态文件转发给用户
+
+发私信
+数据结构
+1. id
+2. content
+3. title
+4. sender_id  
+    不应该是从表单里面拿的，不能用 hidden，容易伪造成某人
+5. receiver_id
+6. read
 """
 
 
