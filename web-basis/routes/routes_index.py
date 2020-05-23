@@ -22,10 +22,11 @@ def route_index(request):
 def route_static(request):
     """
     静态资源的处理函数, 读取图片并生成响应返回
+    过程：
     <img src="/static?file=doge.gif"/>
     GET /static?file=doge.gif
     path, query = response_for_path('/static?file=doge.gif')
-    path '/static'
+    path = '/static'
     query = {
         'file': 'doge.gif',
     }

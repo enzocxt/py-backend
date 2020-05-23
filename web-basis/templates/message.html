@@ -25,11 +25,12 @@
         <!-- action 属性是 path -->
         <!-- method 属性是 HTTP方法 一般是 get 或者 post -->
         <!-- get post 的区别 -->
-        <form action="/" method="post">
+        <form action="/message" method="post">
             <!-- textarea 是一个文本域 -->
             <!-- name rows cols 都是属性 -->
-            <!-- /?message=输入的内容 -->
-            <textarea name="message" rows="8" cols="40"></textarea>
+            <!-- /?message=输入的内容&author=输入的内容 -->
+            <textarea name="message"></textarea>
+            <textarea name="author"></textarea>
             <!-- button type=submit 才可以提交表单 -->
             <button type="submit">POST 提交</button>
         </form>
