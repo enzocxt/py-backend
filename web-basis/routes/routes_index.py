@@ -1,5 +1,6 @@
 from utils import log
 from models.message import Message
+from models.user import User
 
 
 def template(name):
@@ -57,7 +58,47 @@ def route_message(request):
     return r.encode(encoding='utf-8')
 
 
+def route_login(request):
+    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    if request.method == 'POST':
+        form = request.form()
+        u = User.new(form)
+        if u.validate_login():
+            result = '登录成功'
+        else:
+            result = '用户名或密码错误'
+    else:
+        result = ''
+    body = template('login.html')
+    body = body.replace('{{result}}', result)
+    r = header + '\r\n' + body
+    return r.encode(encoding='utf-8')
+
+
+def route_register(request):
+    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    if request.method == 'POST':
+        # HTTP BODY 如下
+        # username=gw123&password=123
+        # 经过 request.form() 函数之后会变成一个字典
+        form = request.form()
+        u = User.new(form)
+        if u.validate_register():
+            u.save()
+            result = '注册成功<br> <pre>{}</pre>'.format(User.all())
+        else:
+            result = '用户名或者密码长度必须大于2'
+    else:
+        result = ''
+    body = template('register.html')
+    body = body.replace('{{result}}', result)
+    r = header + '\r\n' + body
+    return r.encode(encoding='utf-8')
+
+
 route_dict = {
     '/': route_index,
     '/message': route_message,
+    '/login': route_login,
+    '/register': route_register,
 }

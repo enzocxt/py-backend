@@ -6,14 +6,23 @@ from routes import route_dict
 from utils import log
 
 
-# [------- Socket Server 套路 -------]
-# Request class
-# routes 中包含所有的路由函数
-#   静态路由 和 其它路由
-# 无限循环监听 request
-# parse request 得到 method, path, query, body
-# 使用 路由函数 返回不同的 response
-# models 中包含所有的数据类
+"""
+[------- Socket Server 套路 -------]
+Request class
+routes 中包含所有的路由函数
+  静态路由 和 其它路由
+无限循环监听 request
+parse request 得到 method, path, query, body
+使用 路由函数 返回不同的 response
+models 中包含所有的数据类
+
+url 的规范
+第一个 ? 之前的是 path
+? 之后的是 query
+http://c.cc/search?a=b&c=d&e=1
+PATH /search
+QUERY a=b&c=d&e=1
+"""
 
 
 # 定义一个 class 用于保存请求的数据
@@ -29,11 +38,12 @@ class Request(object):
         form 函数用于把 body 解析为一个字典并返回
         body 的格式如下 a=b&c=d&e=1
         """
+        # 使用 urllib.parse.unquote 进行转码
         # username=g+u%26a%3F&password=
         # username=g u&a?&password=
-        # TODO, 这实际上算是一个 bug，应该在解析出数据后再去 unquote
-        body = urllib.parse.unquote(self.body)
-        args = body.split('&')
+        # 应该在解析出数据后再去 unquote
+        args = self.body.split('&')
+        args = [urllib.parse.unquote(arg) for arg in args]
         f = {}
         for arg in args:
             k, v = arg.split('=')
@@ -42,32 +52,6 @@ class Request(object):
 
 
 request = Request()
-
-
-def page(filename):
-    with open(filename, encoding='utf-8') as fin:
-        return fin.read()
-
-
-def route_msg():
-    """
-    msg 页面的处理函数
-    """
-    header = 'HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n'
-    body = page('index.html')
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
-
-
-def route_image(filename=''):
-    """
-    图片的处理函数, 读取图片并生成响应返回
-    """
-    filename = 'doge.gif'
-    with open(filename, 'rb') as f:
-        header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n'
-        img = header + b'\r\n' + f.read()
-        return img
 
 
 def error(code=404):
