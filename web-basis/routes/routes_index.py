@@ -1,6 +1,12 @@
+import random
+
 from utils import log
 from models.message import Message
 from models.user import User
+
+
+message_list = []
+session = {}
 
 
 def template(name):
@@ -39,10 +45,6 @@ def route_static(request):
         return img
 
 
-# message_list 存储了所有的 message
-message_list = []
-
-
 def route_message(request):
     log('本次请求的 method', request.method)
     if request.method == 'POST':
@@ -59,12 +61,41 @@ def route_message(request):
     return r.encode(encoding='utf-8')
 
 
+def response_with_headers(headers):
+    """
+    Content-Type: text/html
+    Set-Cookie: user=gua
+    """
+    header = 'HTTP/1.1 210 VERY OK\r\n'
+    header += ''.join(['{}: {}\r\n'.format(k, v)
+                       for k, v in headers.items()])
+    return header
+
+
+def current_user(request):
+    """
+    获得当前的用户
+    """
+    # session_id = request.cookies.get('user', '')
+    # username = session.get(session_id, '【游客】')
+    # log('request:', request)
+    username = request.cookies.get('user', '【游客】')
+    return username
+
+
 def route_login(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    # header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
+    headers = {
+        'Content-Type': 'text/html',
+    }
+    username = current_user(request)
     if request.method == 'POST':
         form = request.form()
         u = User.new(form)
         if u.validate_login():
+            # server 端 设置 'Set-Cookie' 字段 并发送给 client
+            # client 根据 response 中的该字段设置自己 request headers 的 'Cookie' 字段
+            headers['Set-Cookie'] = 'user={}'.format(u.username)
             result = '登录成功'
         else:
             result = '用户名或密码错误'
@@ -72,6 +103,8 @@ def route_login(request):
         result = ''
     body = template('login.html')
     body = body.replace('{{result}}', result)
+    body = body.replace('{{username}}', username)
+    header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
 

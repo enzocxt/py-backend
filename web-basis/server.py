@@ -9,6 +9,7 @@ from utils import log
 """
 [------- Socket Server 套路 -------]
 Request class
+    加上 cookies 和 headers 字段
 routes 中包含所有的路由函数
   静态路由 和 其它路由
 无限循环监听 request
@@ -32,6 +33,34 @@ class Request(object):
         self.path = ''
         self.query = {}
         self.body = ''
+        self.headers = {}
+        self.cookies = {}
+
+    def add_cookies(self):
+        """
+        key=val 这种形式
+        height=168; user=tao
+        """
+        cookies = self.headers.get('Cookie', '')
+        kvs = cookies.split('; ')
+        log('cookie:', kvs)
+        for kv in kvs:
+            if '=' in kv:
+                k, v = kv.split('=', 1)
+                self.cookies[k] = v
+
+    def add_headers(self, headers):
+        """
+        Accept-Language: zh-CN,zh;q=0.8
+        Cookie: height=168; user=tao
+        """
+        lines = headers
+        for line in lines:
+            k, v = line.split(': ', 1)
+            self.headers[k] = v
+        # 清除 cookies
+        self.cookies = {}
+        self.add_cookies()
 
     def form(self):
         """
@@ -123,7 +152,13 @@ def run(host='', port=2000):
             # recv 可以接收客户端发送过来的数据
             # 参数是要接收的字节数
             # 返回值是一个 bytes 类型
-            r = connection.recv(1024)
+            r = b''
+            while True:
+                tmp = connection.recv(1024)
+                r += tmp
+                if len(tmp) < 1024:
+                    break
+            # r = connection.recv(1024)
             # bytes 类型调用 decode('utf-8') 来转成一个字符串(str)
             r = r.decode('utf-8')
             log('原始请求：', r)
@@ -134,8 +169,10 @@ def run(host='', port=2000):
             path = r.split()[1]
             # 设置 request 的 method
             request.method = r.split()[0]
+            rs = r.split('\r\n\r\n', 1)
+            request.add_headers(rs[0].split('\r\n')[1:])
             # 把 body 放入 request 中
-            request.body = r.split('\r\n\r\n', 1)[1]
+            request.body = rs[1]
             # 用 response_for_path 函数来得到 path 对应的响应内容
             response = response_for_path(path)
             # 把响应发送给客户端
