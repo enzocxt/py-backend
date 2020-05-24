@@ -135,10 +135,6 @@ def update(request):
     """
     用于更新 todo 的路由函数
     """
-    uname = current_user(request)
-    u = User.find_by(username=uname)
-    if u is None:
-        return redirect('/login')
     if request.method == 'POST':
         # 'title=aaa' ==> {'title': 'aaa'}
         form = request.form()
@@ -163,12 +159,22 @@ def delete(request):
     return redirect('/todo')
 
 
+def login_required(route_func):
+    def func(request):
+        uname = current_user(request)
+        u = User.find_by(username=uname)
+        if u is None:
+            return redirect('/login')
+        return route_func(request)
+    return func
+
+
 route_dict = {
     # GET 请求，显示页面
     '/todo': index,
     '/todo/edit': edit,
     # POST 请求，处理数据
     '/todo/add': add,
-    '/todo/update': update,
+    '/todo/update': login_required(update),
     '/todo/delete': delete,
 }
