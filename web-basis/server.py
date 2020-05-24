@@ -59,6 +59,8 @@ class Request(object):
             Cookie: height=168; user=tao
         ]
         """
+        # 清空 headers
+        self.headers = {}
         lines = headers
         for line in lines:
             k, v = line.split(': ', 1)

@@ -8,11 +8,19 @@ from . import (
     template,
     redirect,
     response_with_headers,
-    current_user,
 )
 
 message_list = []
 session = {}
+
+
+def current_user(request):
+    """
+    获得当前的用户
+    """
+    session_id = request.cookies.get('user', '')
+    username = session.get(session_id, '【游客】')
+    return username
 
 
 def route_index(request):

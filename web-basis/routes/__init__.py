@@ -1,9 +1,6 @@
 import random
 
 
-session = {}
-
-
 def random_str():
     """
     生成一个随机的字符串
@@ -46,12 +43,3 @@ def redirect(url):
     # [注意] 没有 HTTP body 部分
     r = response_with_headers(headers, status_code=302) + '\r\n'
     return r.encode('utf-8')
-
-
-def current_user(request):
-    """
-    获得当前的用户
-    """
-    session_id = request.cookies.get('user', '')
-    username = session.get(session_id, '【游客】')
-    return username
