@@ -87,7 +87,7 @@ class Model(object):
         """
         models = self.all()
         log('models:', models)
-        if self.__dict__.get('id') == -1:
+        if self.__dict__.get('id') is None or self.__dict__.get('id') == -1:
             # 加上 id
             if len(models) > 0:
                 # 不是第一个数据
@@ -104,9 +104,24 @@ class Model(object):
                     index = i
                     break
             if index > -1:
-                # 找到下表，替换数据
+                # 找到下标，替换数据
                 models[index] = self
         # __dict__ 是包含了对象所有属性和值的字典
+        m_data = [m.__dict__ for m in models]
+        path = self.db_path()
+        save(m_data, path)
+
+    def remove(self):
+        models = self.all()
+        log('models:', models)
+        if self.__dict__.get('id') is not None or self.__dict__.get('id') != -1:
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
+            if index > -1:
+                del models[index]
         m_data = [m.__dict__ for m in models]
         path = self.db_path()
         save(m_data, path)
