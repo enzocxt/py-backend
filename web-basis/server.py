@@ -52,8 +52,10 @@ class Request(object):
 
     def add_headers(self, headers):
         """
-        Accept-Language: zh-CN,zh;q=0.8
-        Cookie: height=168; user=tao
+        [
+            Accept-Language: zh-CN,zh;q=0.8
+            Cookie: height=168; user=tao
+        ]
         """
         lines = headers
         for line in lines:

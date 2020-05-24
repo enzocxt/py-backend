@@ -131,6 +131,7 @@ def route_register(request):
         # 经过 request.form() 函数之后会变成一个字典
         form = request.form()
         u = User.new(form)
+        log('注册:', u)
         if u.validate_register():
             u.save()
             result = '注册成功<br> <pre>{}</pre>'.format(User.all())

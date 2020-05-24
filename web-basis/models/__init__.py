@@ -52,13 +52,60 @@ class Model(object):
         ms = [cls.new(m) for m in models]
         return ms
 
+    @classmethod
+    def find_by(cls, **kwargs):
+        """
+        用法如下，kwargs 是只有一个元素的 dict
+        u = User.find_by(username='gua')
+        """
+        log('kwargs, ', kwargs)
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        for m in all:
+            if v == m.__dict__[k]:
+                return m
+        return None
+
+    @classmethod
+    def find_all(cls, **kwargs):
+        k, v = '', ''
+        for key, value in kwargs.items():
+            k, v = key, value
+        all = cls.all()
+        data = []
+        for m in all:
+            # getattr(m, k) 等价于 m.__dict__[k]
+            if v == m.__dict__[k]:
+                data.append(m)
+        return data
+
     def save(self):
         """
         save 方法用于把一个 Model 的实例保存到文件中
         """
         models = self.all()
         log('models:', models)
-        models.append(self)
+        if self.__dict__.get('id') == -1:
+            # 加上 id
+            if len(models) > 0:
+                # 不是第一个数据
+                self.id = models[-1].id + 1
+            else:
+                # 是第一个数据
+                self.id = 1
+            models.append(self)
+        else:
+            # 有 id 说明已经存在于数据文件中
+            index = -1
+            for i, m in enumerate(models):
+                if m.id == self.id:
+                    index = i
+                    break
+            if index > -1:
+                # 找到下表，替换数据
+                models[index] = self
         # __dict__ 是包含了对象所有属性和值的字典
         m_data = [m.__dict__ for m in models]
         path = self.db_path()
