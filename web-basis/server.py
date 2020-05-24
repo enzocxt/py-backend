@@ -13,6 +13,7 @@ Request class
     简单的 cookie 由用户名组成
 routes 中包含所有的路由函数
   静态路由 和 其它路由
+  redirect 函数
 无限循环监听 request
 parse request 得到 method, path, query, body
 使用 路由函数 返回不同的 response
