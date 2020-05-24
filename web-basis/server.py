@@ -10,6 +10,7 @@ from utils import log
 [------- Socket Server 套路 -------]
 Request class
     加上 cookies 和 headers 字段
+    简单的 cookie 由用户名组成
 routes 中包含所有的路由函数
   静态路由 和 其它路由
 无限循环监听 request

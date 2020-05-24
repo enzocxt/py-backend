@@ -9,6 +9,18 @@ message_list = []
 session = {}
 
 
+def random_str():
+    """
+    生成一个随机的字符串
+    """
+    seed = 'qwertyuiopasdfghjklzxcvbnm,./?><[]{}+_)(*&^%$#@!~`1234567890'
+    s = ''
+    for i in range(16):
+        random_index = random.randint(0, len(seed) - 2)
+        s += seed[random_index]
+    return s
+
+
 def template(name):
     path = 'templates/' + name
     with open(path, 'r', encoding='utf-8') as fin:
@@ -76,10 +88,8 @@ def current_user(request):
     """
     获得当前的用户
     """
-    # session_id = request.cookies.get('user', '')
-    # username = session.get(session_id, '【游客】')
-    # log('request:', request)
-    username = request.cookies.get('user', '【游客】')
+    session_id = request.cookies.get('user', '')
+    username = session.get(session_id, '【游客】')
     return username
 
 
@@ -95,7 +105,11 @@ def route_login(request):
         if u.validate_login():
             # server 端 设置 'Set-Cookie' 字段 并发送给 client
             # client 根据 response 中的该字段设置自己 request headers 的 'Cookie' 字段
-            headers['Set-Cookie'] = 'user={}'.format(u.username)
+            # headers['Set-Cookie'] = 'user={}'.format(u.username)
+            # 设置一个随机字符串来当令牌使用
+            session_id = random_str()
+            session[session_id] = u.username
+            headers['Set-Cookie'] = 'user={}'.format(session_id)
             result = '登录成功'
         else:
             result = '用户名或密码错误'
