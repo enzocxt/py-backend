@@ -4,10 +4,10 @@ from models import Model
 
 # 定义一个 class 用于保存用户信息
 class Todo(Model):
-    def __init__(self, form):
+    def __init__(self, form, user_id=-1):
         self.id = int(form.get('id', -1))
         self.title = form.get('title', '')
-        self.user_id = int(form.get('user_id', -1))
+        self.user_id = int(form.get('user_id', user_id))
         self.ct = int(time.time())  # create time
         self.ut = self.ct  # update time
 
@@ -18,7 +18,7 @@ class Todo(Model):
         Todo.new({'task': '吃饭'})
         form: 一个字典 包含了 todo 的数据
         """
-        t = cls(form, user_id)
+        t = cls(form, user_id=user_id)
         t.save()
         return t
 

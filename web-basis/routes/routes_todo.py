@@ -59,8 +59,7 @@ def add(request):
     if request.method == 'POST':
         # 'title=aaa' ==> {'title': 'aaa'}
         form = request.form()
-        t = Todo.new(form)
-        t.user_id = u.id
+        t = Todo(form, u.id)
         t.save()
     # 浏览器发送数据过来被处理后, 重定向到首页
     # 浏览器在请求新首页的时候, 就能看到新增的数据了

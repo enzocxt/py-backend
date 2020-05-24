@@ -12,7 +12,7 @@
     </form>
     {% for t in todos %}
         <div>
-            {{ t.id }} : {{ t.title }}
+            {{ t.id }} : {{ t.title }} @ {{ t.time() }}
             <a href="/todo/edit?id={{t.id}}">edit</a>
             <a href="/todo/delete?id={{t.id}}">delete</a>
         </div>

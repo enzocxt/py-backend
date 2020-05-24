@@ -1,5 +1,5 @@
 import json
-
+import time
 from utils import log
 
 
@@ -49,7 +49,7 @@ class Model(object):
         """
         path = cls.db_path()
         models = load(path)
-        ms = [cls.new(m) for m in models]
+        ms = [cls(m) for m in models]
         return ms
 
     @classmethod
@@ -125,6 +125,12 @@ class Model(object):
         m_data = [m.__dict__ for m in models]
         path = self.db_path()
         save(m_data, path)
+
+    def time(self):
+        format_ = '%Y/%m/%d %H:%M:%S'
+        value = time.localtime(self.ct)
+        dt = time.strftime(format_, value)
+        return dt
 
     def __repr__(self):
         """
