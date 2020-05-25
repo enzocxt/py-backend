@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weibo</title>
+    <style>
+        .comment {
+            border: 1px red solid;
+        }
+    </style>
+</head>
+<body>
+    <a href="/weibo/new">写新微博</a>
+
+    {% for w in weibos %}
+    <p>
+        {{ w.content }} from {{ user.username }}
+    </p>
+    {% endfor %}
+</body>
+</html>

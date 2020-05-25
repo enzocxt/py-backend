@@ -71,3 +71,6 @@ TODO 带用户验证功能
 常用的摘要算法主要有 md5 和 sha1
 * md5 的输出结果为 32 字符
 * sha1 的输出结果为 40 字符
+
+### 实现一个微博程序
+CRUD(CREATE RETRIEVE UPDATE DELETE) 操作

@@ -10,6 +10,7 @@ class User(Model):
 
     @staticmethod
     def hash_password(pwd):
+        # [------- 密码进行摘要加盐套路 -------]
         import hashlib
         # 用 ASCII 编码转换成 bytes 对象
         p = pwd.encode('ascii')
