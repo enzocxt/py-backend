@@ -86,20 +86,23 @@ class Model(object):
     def find(cls, id):
         return cls.find_by(id=id)
 
-    def remove(self):
-        models = self.all()
-        log('models:', models)
-        if self.__dict__.get('id') is not None or self.__dict__.get('id') != -1:
-            index = -1
-            for i, m in enumerate(models):
-                if m.id == self.id:
-                    index = i
-                    break
-            if index > -1:
-                del models[index]
-        m_data = [m.__dict__ for m in models]
-        path = self.db_path()
-        save(m_data, path)
+    @classmethod
+    def delete(cls, id):
+        models = cls.all()
+        index = -1
+        for i, m in enumerate(models):
+            if m.id == id:
+                index = i
+                break
+        # 判断是否找到了这个 id 的数据
+        if index == -1:
+            return
+        # 找到数据
+        # del models[index]
+        models.pop(index)
+        ms_data = [m.__dict__ for m in models]
+        path = cls.db_path()
+        save(ms_data, path)
 
     def time(self):
         format_ = '%Y/%m/%d %H:%M:%S'
@@ -110,17 +113,19 @@ class Model(object):
     def save(self):
         """
         save 方法用于把一个 Model 的实例保存到文件中
+        使用 all 方法读取文件中的所有 model 并生成一个 list
+        把 self 添加进去并且保存进文件
         """
         models = self.all()
-        log('models:', models)
-        if self.__dict__.get('id') is None or self.__dict__.get('id') == -1:
+        # log('models:', models)
+        # 如果没有 id，说明是新添加的元素
+        if self.id is None or self.__dict__.get('id') == -1:
             # 加上 id
-            if len(models) > 0:
-                # 不是第一个数据
-                self.id = models[-1].id + 1
-            else:
-                # 是第一个数据
+            if len(models) == 0:
                 self.id = 1
+            else:
+                m = models[-1]
+                self.id = m.id + 1
             models.append(self)
         else:
             # 有 id 说明已经存在于数据文件中
@@ -133,9 +138,9 @@ class Model(object):
                 # 找到下标，替换数据
                 models[index] = self
         # __dict__ 是包含了对象所有属性和值的字典
-        m_data = [m.__dict__ for m in models]
+        ms_data = [m.__dict__ for m in models]
         path = self.db_path()
-        save(m_data, path)
+        save(ms_data, path)
 
     def __repr__(self):
         """
