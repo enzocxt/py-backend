@@ -30,10 +30,11 @@ def response_with_headers(headers, status_code=200):
     return header
 
 
-def http_response(body, headers=''):
-    headers = {
-        'Content-Type': 'text/html',
-    }
+def http_response(body, headers=None):
+    if headers is None:
+        headers = {
+            'Content-Type': 'text/html',
+        }
     header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')

@@ -42,41 +42,34 @@ def route_login(request):
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
             # 设置一个随机字符串来当令牌使用
             session_id = random_str()
-            session[session_id] = u.username
+            session[session_id] = user.id
             headers['Set-Cookie'] = 'user={}'.format(session_id)
             # log('headers response:', headers)
-            result = '登录成功'
+            print('登录成功:', user)
             return redirect('/', headers=headers)
         else:
-            result = '用户名或密码错误'
-    else:
-        result = ''
+            print('用户名或密码错误')
+            return redirect('/login')
     body = template('login.html')
-    body = body.replace('{{result}}', result)
-    body = body.replace('{{username}}', u.username)
     return http_response(body, headers=headers)
 
 
 def route_register(request):
-    header = 'HTTP/1.1 210 VERY OK\r\nContent-Type: text/html\r\n'
     if request.method == 'POST':
         # HTTP BODY 如下
         # username=gw123&password=123
         # 经过 request.form() 函数之后会变成一个字典
         form = request.form()
-        u = User.new(form)
+        u = User(form)
         log('注册:', u)
         if u.validate_register():
             u.save()
-            result = '注册成功<br> <pre>{}</pre>'.format(User.all())
+            # print('注册成功:', u)
+            return redirect('/login')
         else:
-            result = '用户名或者密码长度必须大于2'
-    else:
-        result = ''
+            return redirect('/register')
     body = template('register.html')
-    body = body.replace('{{result}}', result)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
+    return http_response(body)
 
 
 route_dict = {

@@ -2,16 +2,6 @@
   {
     "id": 1,
     "username": "tao",
-    "password": "123"
-  },
-  {
-    "id": 2,
-    "username": "tao2",
-    "password": "123"
-  },
-  {
-    "id": 3,
-    "username": "tao2",
-    "password": "123"
+    "password": "e7b9e61c66475989994af6561a3ef964e5fd08b9356f8e29a3c64a867aaad5b9"
   }
 ]
