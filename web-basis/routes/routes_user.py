@@ -1,12 +1,14 @@
 import random
 
-from utils import log
+from utils import (
+    log,
+    template,
+)
 from models.message import Message
 from models.user import User
 from .session import session
 from . import (
     random_str,
-    template,
     redirect,
     response_with_headers,
     http_response,
@@ -42,7 +44,8 @@ def route_login(request):
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
             # 设置一个随机字符串来当令牌使用
             session_id = random_str()
-            session[session_id] = user.id
+            # session[session_id] = user.id
+            session[session_id] = user.username
             headers['Set-Cookie'] = 'user={}'.format(session_id)
             # log('headers response:', headers)
             print('登录成功:', user)

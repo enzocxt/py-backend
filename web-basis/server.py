@@ -2,6 +2,7 @@ import socket
 import urllib.parse
 
 from routes.routes_index import route_static
+from routes.routes_user import route_dict as user_routes
 from routes.routes_todo import route_dict as todo_routes
 from routes.routes_index import route_dict
 from routes import (
@@ -130,6 +131,7 @@ def response_for_path(path):
         '/static': route_static,
     }
     r.update(route_dict)
+    r.update(user_routes)
     r.update(todo_routes)
     response = r.get(path, error)
     return response(request)

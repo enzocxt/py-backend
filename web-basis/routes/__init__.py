@@ -13,10 +13,10 @@ def random_str():
     return s
 
 
-def template(name):
-    path = 'templates/' + name
-    with open(path, 'r', encoding='utf-8') as fin:
-        return fin.read()
+# def template(name):
+#     path = 'templates/' + name
+#     with open(path, 'r', encoding='utf-8') as fin:
+#         return fin.read()
 
 
 def response_with_headers(headers, status_code=200):
@@ -48,9 +48,10 @@ def redirect(url, headers=None):
     """
     if headers is None:
         headers = {
-            'Location': url,
+            'Content-Type': 'text/html',
         }
     # 增加 Location 字段并生成 HTTP 响应返回
+    headers['Location'] = url
     # [注意] 没有 HTTP body 部分
     r = response_with_headers(headers, status_code=302) + '\r\n'
     return r.encode('utf-8')
