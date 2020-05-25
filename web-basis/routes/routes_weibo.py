@@ -3,7 +3,10 @@ from utils import (
     template,
 )
 from models.user import User
-from models.weibo import Weibo
+from models.weibo import (
+    Weibo,
+    Comment,
+)
 from . import (
     random_str,
     redirect,
@@ -99,6 +102,18 @@ def delete(request):
     return redirect('/weibo')
 
 
+def comment_add(request):
+    uname = current_user(request)
+    user = User.find_by(username=uname)
+    if user is None:
+        return redirect('/login')
+    form = request.form()
+    c = Comment(form)
+    c.user_id = user.id
+    c.save()
+    return redirect('/weibo')
+
+
 def login_required(route_func):
     def func(request):
         uname = current_user(request)
@@ -118,4 +133,5 @@ route_dict = {
     '/weibo/add': add,
     '/weibo/update': login_required(update),
     '/weibo/delete': delete,
+    '/comment/add': comment_add,
 }

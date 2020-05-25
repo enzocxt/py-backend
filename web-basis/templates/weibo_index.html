@@ -17,6 +17,17 @@
         {{ w.content }} from {{ user.username }}
         <a href="/weibo/delete?id={{ w.id }}">删除</a>
         <a href="/weibo/edit?id={{ w.id }}">修改</a>
+        {% for c in w.comments() %}
+            <div class="comment">
+                {{ c.user().username }} : {{ c.content }}
+            </div>
+        {% endfor %}
+        <form action="/comment/add" method="POST">
+            <input type="hidden" name="weibo_id" value="{{ w.id }}">
+            <input name="content">
+            <br>
+            <button type="submit">添加评论</button>
+        </form>
     </p>
     {% endfor %}
 </body>
