@@ -4,6 +4,9 @@ import urllib.parse
 from routes.routes_index import route_static
 from routes.routes_todo import route_dict as todo_routes
 from routes.routes_index import route_dict
+from routes import (
+    error,
+)
 from utils import log
 
 
@@ -44,6 +47,7 @@ class Request(object):
         key=val 这种形式
         height=168; user=tao
         """
+        # 从 headers 中取得 cookie
         cookies = self.headers.get('Cookie', '')
         kvs = cookies.split('; ')
         log('cookie:', kvs)
@@ -88,17 +92,6 @@ class Request(object):
 
 
 request = Request()
-
-
-def error(code=404):
-    """
-    根据 code 返回不同的错误响应
-    目前只有 404
-    """
-    e = {
-        404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
-    }
-    return e.get(code, b'')
 
 
 def parse_path(path):

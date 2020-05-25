@@ -52,3 +52,14 @@ def redirect(url):
     # [注意] 没有 HTTP body 部分
     r = response_with_headers(headers, status_code=302) + '\r\n'
     return r.encode('utf-8')
+
+
+def error(code=404):
+    """
+    根据 code 返回不同的错误响应
+    目前只有 404
+    """
+    e = {
+        404: b'HTTP/1.1 404 NOT FOUND\r\n\r\n<h1>NOT FOUND</h1>',
+    }
+    return e.get(code, b'')
