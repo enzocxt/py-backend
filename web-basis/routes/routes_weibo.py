@@ -9,6 +9,7 @@ from . import (
     redirect,
     response_with_headers,
     http_response,
+    error,
 )
 from .routes_index import current_user
 
@@ -42,16 +43,15 @@ def edit(request):
     u = User.find_by(username=uname)
     if u is None:
         return redirect('/login')
-    # 得到当前编辑的 todo 的 id
-    todo_id = int(request.query.get('id', -1))
-    t = Todo.find_by(id=todo_id)
+    # 得到当前编辑的 weibo 的 id
+    weibo_id = int(request.query.get('id', -1))
+    w = Weibo.find(weibo_id)
+    if w is None:
+        return error(request)
     # 权限
-    if t.user_id != u.id:
+    if w.user_id != u.id:
         return redirect('/login')
-    # if todo_id < 1:
-    #     return error(404)
-    # 替换模板文件中的标记字符串
-    body = template('todo_edit.html', todo=t)
+    body = template('weibo_edit.html', weibo=w)
     return http_response(body)
 
 
@@ -68,23 +68,21 @@ def add(request):
         form = request.form()
         w = Weibo(form, u.id)
         w.save()
-    # 浏览器发送数据过来被处理后, 重定向到首页
-    # 浏览器在请求新首页的时候, 就能看到新增的数据了
     return redirect('/weibo')
 
 
 def update(request):
     """
-    用于更新 todo 的路由函数
+    用于更新 weibo 的路由函数
     """
     if request.method == 'POST':
         # 'title=aaa' ==> {'title': 'aaa'}
         form = request.form()
-        todo_id = int(request.query.get('id', -1))
-        t = Todo.find_by(id=todo_id)
-        t.title = form.get('title', t.title)
-        t.save()
-    return redirect('/todo')
+        weibo_id = int(request.query.get('id', -1))
+        w = Weibo.find(weibo_id)
+        w.content = form.get('content', w.content)
+        w.save()
+    return redirect('/weibo')
 
 
 def delete(request):
@@ -92,13 +90,13 @@ def delete(request):
     u = User.find_by(username=uname)
     if u is None:
         return redirect('/login')
-    todo_id = int(request.query.get('id', -1))
-    t = Todo.find_by(id=todo_id)
-    if t.user_id != u.id:
+    weibo_id = int(request.query.get('id', -1))
+    w = Weibo.find(weibo_id)
+    if w.user_id != u.id:
         return redirect('/login')
-    if t is not None:
-        t.remove()
-    return redirect('/todo')
+    if w is not None:
+        w.remove()
+    return redirect('/weibo')
 
 
 def login_required(route_func):
