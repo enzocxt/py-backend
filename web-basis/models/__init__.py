@@ -86,12 +86,11 @@ class Model(object):
     def find(cls, id):
         return cls.find_by(id=id)
 
-    @classmethod
-    def delete(cls, id):
-        models = cls.all()
+    def delete(self):
+        models = self.all()
         index = -1
         for i, m in enumerate(models):
-            if m.id == id:
+            if m.id == self.id:
                 index = i
                 break
         # 判断是否找到了这个 id 的数据
@@ -101,7 +100,7 @@ class Model(object):
         # del models[index]
         models.pop(index)
         ms_data = [m.__dict__ for m in models]
-        path = cls.db_path()
+        path = self.db_path()
         save(ms_data, path)
 
     def time(self):

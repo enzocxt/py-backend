@@ -90,7 +90,7 @@ def delete(request):
     if t.user_id != u.id:
         return redirect('/login')
     if t is not None:
-        t.remove()
+        t.delete()
     return redirect('/todo')
 
 

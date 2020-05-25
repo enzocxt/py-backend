@@ -2430,3 +2430,357 @@ Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-l
 
 2020/05/25 21:22:27 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=o,.8_((7c6/h.g2+']
 2020/05/25 21:22:27 path and query: /weibo {}
+2020/05/25 21:23:15 原始请求： GET /weibo/delete?id=2 HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/weibo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=o,.8_((7c6/h.g2+
+
+
+2020/05/25 21:23:15 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=o,.8_((7c6/h.g2+']
+2020/05/25 21:23:15 path and query: /weibo/delete {'id': '2'}
+2020/05/25 21:24:02 start at :2000
+2020/05/25 21:24:10 原始请求： GET /weibo HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=o,.8_((7c6/h.g2+
+
+
+2020/05/25 21:24:10 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=o,.8_((7c6/h.g2+']
+2020/05/25 21:24:10 path and query: /weibo {}
+2020/05/25 21:24:10 原始请求： GET /login HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=o,.8_((7c6/h.g2+
+
+
+2020/05/25 21:24:10 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=o,.8_((7c6/h.g2+']
+2020/05/25 21:24:10 path and query: /login {}
+2020/05/25 21:24:13 原始请求： POST /login HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:2000
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=o,.8_((7c6/h.g2+
+
+username=tao&password=123
+2020/05/25 21:24:13 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=o,.8_((7c6/h.g2+']
+2020/05/25 21:24:13 path and query: /login {}
+2020/05/25 21:24:13 原始请求： GET / HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:13 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:13 path and query: / {}
+2020/05/25 21:24:14 原始请求： GET /static?file=doge.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:14 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:14 path and query: /static {'file': 'doge.gif'}
+2020/05/25 21:24:14 原始请求： GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:14 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:14 path and query: /static {'file': 'doge1.jpg'}
+2020/05/25 21:24:14 原始请求： GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:14 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:14 path and query: /static {'file': 'doge2.gif'}
+2020/05/25 21:24:18 原始请求： GET /weibo HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:18 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:18 path and query: /weibo {}
+2020/05/25 21:24:20 原始请求： GET /weibo/delete?id=2 HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/weibo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:24:20 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:24:20 path and query: /weibo/delete {'id': '2'}
+2020/05/25 21:27:26 start at :2000
+2020/05/25 21:27:31 原始请求： GET /weibo HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:27:31 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:27:31 path and query: /weibo {}
+2020/05/25 21:27:31 原始请求： GET /login HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+
+2020/05/25 21:27:31 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:27:31 path and query: /login {}
+2020/05/25 21:27:34 原始请求： POST /login HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Content-Length: 25
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://localhost:2000
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=v}a5x&r]k(%/$63_
+
+username=tao&password=123
+2020/05/25 21:27:34 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=v}a5x&r]k(%/$63_']
+2020/05/25 21:27:34 path and query: /login {}
+2020/05/25 21:27:34 原始请求： GET / HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/login
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:34 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:34 path and query: / {}
+2020/05/25 21:27:35 原始请求： GET /static?file=doge.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:35 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:35 path and query: /static {'file': 'doge.gif'}
+2020/05/25 21:27:35 原始请求： GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:35 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:35 path and query: /static {'file': 'doge1.jpg'}
+2020/05/25 21:27:35 原始请求： GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:35 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:35 path and query: /static {'file': 'doge2.gif'}
+2020/05/25 21:27:39 原始请求： GET /weibo HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:39 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:39 path and query: /weibo {}
+2020/05/25 21:27:41 原始请求： GET /weibo/delete?id=2 HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/weibo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:41 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:41 path and query: /weibo/delete {'id': '2'}
+2020/05/25 21:27:42 原始请求： GET /weibo HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Referer: http://localhost:2000/weibo
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=x,[6lj+,/a$l~5&2
+
+
+2020/05/25 21:27:42 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=x,[6lj+,/a$l~5&2']
+2020/05/25 21:27:42 path and query: /weibo {}

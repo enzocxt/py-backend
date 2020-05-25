@@ -95,7 +95,7 @@ def delete(request):
     if w.user_id != u.id:
         return redirect('/login')
     if w is not None:
-        w.remove()
+        w.delete()
     return redirect('/weibo')
 
 
