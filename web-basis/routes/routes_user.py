@@ -3,15 +3,16 @@ import random
 from utils import log
 from models.message import Message
 from models.user import User
+from .session import session
 from . import (
     random_str,
     template,
     redirect,
     response_with_headers,
+    http_response,
 )
 
 message_list = []
-session = {}
 
 
 def current_user(request):
@@ -24,12 +25,18 @@ def current_user(request):
 
 
 def route_login(request):
-    headers = {}
-    username = current_user(request)
+    """
+    登录页面的路由函数
+    """
+    headers = {
+        'Content-Type': 'text/html',
+    }
+    # username = current_user(request)
     if request.method == 'POST':
         form = request.form()
-        u = User.new(form)
+        u = User(form)
         if u.validate_login():
+            user = User.find_by(username=u.username)
             # server 端 设置 'Set-Cookie' 字段 并发送给 client
             # client 根据 response 中的该字段设置自己 request headers 的 'Cookie' 字段
             # headers['Set-Cookie'] = 'user={}'.format(u.username)
@@ -37,17 +44,17 @@ def route_login(request):
             session_id = random_str()
             session[session_id] = u.username
             headers['Set-Cookie'] = 'user={}'.format(session_id)
+            # log('headers response:', headers)
             result = '登录成功'
+            return redirect('/', headers=headers)
         else:
             result = '用户名或密码错误'
     else:
         result = ''
     body = template('login.html')
     body = body.replace('{{result}}', result)
-    body = body.replace('{{username}}', username)
-    header = response_with_headers(headers)
-    r = header + '\r\n' + body
-    return r.encode(encoding='utf-8')
+    body = body.replace('{{username}}', u.username)
+    return http_response(body, headers=headers)
 
 
 def route_register(request):

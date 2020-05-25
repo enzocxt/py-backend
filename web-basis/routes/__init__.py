@@ -39,15 +39,16 @@ def http_response(body, headers=''):
     return r.encode(encoding='utf-8')
 
 
-def redirect(url):
+def redirect(url, headers=None):
     """
     浏览器在收到 302 响应的时候
     会自动在 HTTP header 里找 Location 字段并获取一个 url
     然后自动请求新的 url
     """
-    headers = {
-        'Location': url,
-    }
+    if headers is None:
+        headers = {
+            'Location': url,
+        }
     # 增加 Location 字段并生成 HTTP 响应返回
     # [注意] 没有 HTTP body 部分
     r = response_with_headers(headers, status_code=302) + '\r\n'
