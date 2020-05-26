@@ -6,8 +6,10 @@ from routes.routes_index import route_static
 from routes.routes_user import route_dict as user_routes
 # from routes.routes_todo import route_dict as todo_routes
 from routes.todo import route_dict as todo_routes
-from routes.routes_weibo import route_dict as weibo_routes
+# from routes.routes_weibo import route_dict as weibo_routes
+from routes.weibo import route_dict as weibo_routes
 from routes.api_todo import route_dict as api_todo
+from routes.api_weibo import route_dict as api_weibo
 from routes.routes_index import route_dict
 from routes import (
     error,
@@ -143,6 +145,7 @@ def response_for_path(path, request):
     r.update(todo_routes)
     r.update(weibo_routes)
     r.update(api_todo)
+    r.update(api_weibo)
     response = r.get(path, error)
     return response(request)
 

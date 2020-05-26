@@ -4,57 +4,73 @@ let timeString = function(timestamp) {
     return t
 }
 
-let todoTemplate = function(todo) {
-    let title = todo.title
-    let id = todo.id
-    let ut = timeString(todo.ut)
-    // data-xx 是自定义标签属性的语法
-    // 通过这样的方式可以给任意标签添加任意属性
-    // 假设 d 是 这个 div 的引用
-    // 这样的自定义属性通过  d.dataset.xx 来获取
-    // 在这个例子里面, 是 d.dataset.id
+let commentsTemplate = function(comments) {
+    let html = ''
+    for(let i = 0; i < comments.length; i++) {
+        let c = comments[i]
+        let t = `
+            <div>
+                ${c.content}
+            </div>
+        `
+        html += t
+    }
+    return html
+}
+
+let weiboTemplate = function(weibo) {
+    let content = weibo.content
+    let id = weibo.id
+    // let ut = timeString(weibo.ut)
+    let comments = commentsTemplate(weibo.comments)
     const t = `
-        <div class="todo-cell" id='todo-${id}' data-id="${id}">
-            <button class="todo-edit">编辑</button>
-            <button class="todo-delete">删除</button>
-            <span class='todo-title'>${title}</span>
-            <time class='todo-ut'>${ut}</time>
+        <div class="weibo-cell" id='weibo-${id}' data-id="${id}">
+            <div>
+                [WEIBO]: ${content}
+            </div>
+            <div class="comment-list">
+                ${comments}
+            </div>
+            <div>
+                <input type="hidden" name="weibo_id" value="">
+                <input name="content">
+                <br>
+                <button class="comment-add">添加评论</button>
+            </div>
+            <button class="weibo-edit">编辑</button>
+            <button class="weibo-delete">删除</button>
+            <span class='weibo-content'>${content}</span>
         </div>
     `
     return t
 }
 
-// 接收一个 todo 参数
-// 将其添加到 todo-list 元素的最后位置
-let insertTodo = function(todo) {
-    let todoCell = todoTemplate(todo)
-    // 插入 todo-list
-    let todoList = e('.todo-list')
-    todoList.insertAdjacentHTML('beforeend', todoCell)
+// 接收一个 weibo 参数
+// 将其添加到 weibo-list 元素的最后位置
+let insertWeibo = function(weibo) {
+    let weiboCell = weiboTemplate(weibo)
+    // 插入 weibo-list
+    let weiboList = e('.weibo-list')
+    weiboList.insertAdjacentHTML('beforeend', weiboCell)
 }
 
 // 插入一个编辑元素
 let insertEditForm = function(cell) {
     let form = `
-        <div class='todo-edit-form'>
-            <input class="todo-edit-input">
-            <button class='todo-update'>更新</button>
+        <div class='weibo-edit-form'>
+            <input class="weibo-edit-input">
+            <button class='weibo-update'>更新</button>
         </div>
     `
     cell.insertAdjacentHTML('beforeend', form)
 }
 
-let loadTodos = function() {
-    // 调用 ajax api 来载入数据
-    // 调用 apiTodoAll 并使用该函数作为其回调函数
-    apiTodoAll(function(r) {
-        // console.log('load all', r)
-        // 解析为 数组
-        let todos = JSON.parse(r)
-        // 循环添加到页面中
-        for(let i = 0; i < todos.length; i++) {
-            let todo = todos[i]
-            insertTodo(todo)
+let loadWeibos = function() {
+    apiWeiboAll(function(r) {
+        let weibos = JSON.parse(r)
+        for(let i = 0; i < weibos.length; i++) {
+            let weibo = weibos[i]
+            insertWeibo(weibo)
         }
     })
 }
@@ -78,12 +94,6 @@ let bindEventTodoAdd = function() {
     })
 }
 
-/*
-删除事件是事先绑定在每个 todo 元素的删除按钮上的
-但是对于删除按钮是后来（通过 ajax）添加的
-如何将事件绑定到后来才有的元素上？
-需要通过 代码委托 的方式，绑定到父节点上
- */
 let bindEventTodoDelete = function() {
     let todoList = e('.todo-list')
     // 注意, 第二个参数可以直接给出定义函数
@@ -150,43 +160,15 @@ let bindEventTodoUpdate = function() {
 }
 
 let bindEvents = function() {
-    bindEventTodoAdd()
-    bindEventTodoDelete()
-    bindEventTodoEdit()
-    bindEventTodoUpdate()
+    // bindEventTodoAdd()
+    // bindEventTodoDelete()
+    // bindEventTodoEdit()
+    // bindEventTodoUpdate()
 }
 
 let __main = function() {
     bindEvents()
-    loadTodos()
+    loadWeibos()
 }
 
 __main()
-
-
-/*
-给 删除 按钮绑定删除的事件
-1, 绑定事件
-2, 删除整个 todo-cell 元素
-*/
-// let todoList = e('.todo-list')
-// // 事件响应函数会被传入一个参数, 就是事件本身
-// todoList.addEventListener('click', function(event){
-//     // log('click todolist', event)
-//     // 我们可以通过 event.target 来得到被点击的元素
-//     let self = event.target
-//     // log('被点击的元素是', self)
-//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
-//     // classList 属性保存了元素的所有 class
-//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
-//     // log(self.classList)
-//     // 判断是否拥有某个 class 的方法如下
-//     if (self.classList.contains('todo-delete')) {
-//         log('点到了 删除按钮')
-//         // 删除 self 的父节点
-//         // parentElement 可以访问到元素的父节点
-//         self.parentElement.remove()
-//     } else {
-//         // log('点击的不是删除按钮******')
-//     }
-// })

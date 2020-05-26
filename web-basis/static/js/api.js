@@ -47,16 +47,19 @@ let apiTodoAdd = function(form, callback) {
 let apiTodoDelete = function(id, callback) {
     let path = '/api/todo/delete?id=' + id
     ajax('GET', path, '', callback)
-    //    get(path, callback)
+    // 可以进一步封装 get 请求
+    // get(path, callback)
 }
 
 // 更新一个 todo
 let apiTodoUpdate = function(form, callback) {
     let path = '/api/todo/update'
     ajax('POST', path, form, callback)
-    //    post(path, form, callback)
+    // 可以进一步封装 post 请求
+    // post(path, form, callback)
 }
 
+// ------- weibo api -------
 // load weibo all
 let apiWeiboAll = function(callback) {
     let path = '/api/weibo/all'

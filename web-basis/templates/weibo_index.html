@@ -10,8 +10,29 @@
     </style>
 </head>
 <body>
-    <a href="/weibo/new">写新微博</a>
+{#    <a href="/weibo/new">写新微博</a>#}
 
+    <div>
+        <input id="id-input-weibo">
+        <button id="id-button-add-weibo">发表微博</button>
+    </div>
+    <div class="weibo-list gua-auto-list"
+         data-method="get"
+         data-path="/api/weibo/all"
+         data-template="xxtemplate"
+    >
+        <div class="comment">
+
+        </div>
+        <div class="comment-form">
+            <input type="hidden" name="weibo_id" value="">
+            <input name="content">
+            <br>
+            <button class="comment-add">添加评论</button>
+        </div>
+    </div>
+
+    <!--
     {% for w in weibos %}
     <p>
         {{ w.content }} from {{ user.username }}
@@ -30,5 +51,8 @@
         </form>
     </p>
     {% endfor %}
+    -->
+    <script src='/static?file=js/api.js'></script>
+    <script src='/static?file=js/weibo.js'></script>
 </body>
 </html>
