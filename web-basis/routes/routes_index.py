@@ -47,10 +47,12 @@ def route_static(request):
     """
     filename = request.query.get('file', 'doge.gif')
     path = 'static/' + filename
+    print('请求静态文件：', filename)
     with open(path, 'rb') as f:
-        header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n'
-        img = header + b'\r\n' + f.read()
-        return img
+        # header = b'HTTP/1.1 200 OK\r\nContent-Type: image/gif\r\n'
+        header = b'HTTP/1.1 200 OK\r\n'
+        content = header + b'\r\n' + f.read()
+        return content
 
 
 def route_message(request):

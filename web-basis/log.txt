@@ -1174,3 +1174,1533 @@ Content-Type: application/json
     "ut": 1590503766
   }
 ]
+2020/05/26 16:38:43 原始请求： 
+2020/05/26 16:44:11 原始请求： GET /api/todo/all HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:11 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:11 path and query: /api/todo/all {} 
+2020/05/26 16:44:11 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "todo1",
+    "user_id": 1,
+    "ct": 1590504251,
+    "ut": 1590504251
+  },
+  {
+    "id": 2,
+    "title": "todo2",
+    "user_id": 1,
+    "ct": 1590504251,
+    "ut": 1590504251
+  }
+]
+2020/05/26 16:44:14 start at :2000
+2020/05/26 16:44:18 原始请求： GET / HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:18 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:18 path and query: / {} 
+2020/05/26 16:44:18 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>吃瓜主页</title>
+</head>
+<body>
+    <h1>Hello 【游客】</h1>
+    <a href="/login">Login</a>
+    <img src="/static?file=doge.gif"/>
+    <img src="/static?file=doge1.jpg"/>
+    <img src="/static?file=doge2.gif"/>
+</body>
+</html>
+2020/05/26 16:44:18 原始请求： GET /static?file=doge.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:18 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:18 path and query: /static {'file': 'doge.gif'} 
+2020/05/26 16:44:18 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2020/05/26 16:44:18 原始请求： GET /static?file=doge1.jpg HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:18 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:18 path and query: /static {'file': 'doge1.jpg'} 
+2020/05/26 16:44:18 异常 'utf-8' codec can't decode byte 0xf5 in position 54: invalid start byte
+2020/05/26 16:44:19 原始请求： GET /static?file=doge2.gif HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: image/webp,image/apng,image/*,*/*;q=0.8
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: http://localhost:2000/
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:19 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:19 path and query: /static {'file': 'doge2.gif'} 
+2020/05/26 16:44:19 异常 'utf-8' codec can't decode byte 0xf6 in position 54: invalid start byte
+2020/05/26 16:44:25 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:25 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:25 path and query: /todo/index {} 
+2020/05/26 16:44:25 响应
+ 
+2020/05/26 16:44:26 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:26 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:26 path and query: /todo/index {} 
+2020/05/26 16:44:26 响应
+ 
+2020/05/26 16:44:26 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:26 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:26 path and query: /todo/index {} 
+2020/05/26 16:44:26 响应
+ 
+2020/05/26 16:44:26 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:26 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:26 path and query: /todo/index {} 
+2020/05/26 16:44:26 响应
+ 
+2020/05/26 16:44:31 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:31 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:31 path and query: /todo/index {} 
+2020/05/26 16:44:31 响应
+ 
+2020/05/26 16:44:31 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:44:31 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:44:31 path and query: /todo/index {} 
+2020/05/26 16:44:31 响应
+ 
+2020/05/26 16:45:02 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:45:02 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:45:02 path and query: /todo/index {} 
+2020/05/26 16:45:02 响应
+ 
+2020/05/26 16:45:31 start at :2000
+2020/05/26 16:45:35 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:45:35 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:45:35 path and query: /todo/index {} 
+2020/05/26 16:45:35 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static?file=api.js'></script>
+    <script src='/static?file=todo.js'></script>
+</body>
+</html>
+2020/05/26 16:45:35 原始请求： GET /static?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:45:35 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:45:35 path and query: /static {'file': 'api.js'} 
+2020/05/26 16:45:36 原始请求： GET /static?file=todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:45:36 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:45:36 path and query: /static {'file': 'todo.js'} 
+2020/05/26 16:45:36 原始请求： GET /static?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:45:36 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:45:36 path and query: /static {'file': 'api.js'} 
+2020/05/26 16:46:34 start at :2000
+2020/05/26 16:46:37 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:46:37 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:46:37 path and query: /todo/index {} 
+2020/05/26 16:46:37 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static/js?file=api.js'></script>
+    <script src='/static/js?file=todo.js'></script>
+</body>
+</html>
+2020/05/26 16:46:37 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:46:37 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:46:37 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:46:37 响应
+ 
+2020/05/26 16:46:37 原始请求： GET /static/js?file=todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:46:37 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:46:37 path and query: /static/js {'file': 'todo.js'} 
+2020/05/26 16:46:37 响应
+ 
+2020/05/26 16:46:38 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:46:38 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:46:38 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:46:38 响应
+ 
+2020/05/26 16:49:46 start at :2000
+2020/05/26 16:49:48 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:49:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:49:48 path and query: /todo/index {} 
+2020/05/26 16:49:48 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static/js?file=api.js'></script>
+    <script src='/static/js?file=todo.js'></script>
+</body>
+</html>
+2020/05/26 16:49:48 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:49:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:49:48 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:49:48 响应
+ 
+2020/05/26 16:49:48 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:49:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:49:48 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:49:48 响应
+ 
+2020/05/26 16:49:48 原始请求： GET /static/js?file=todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:49:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:49:48 path and query: /static/js {'file': 'todo.js'} 
+2020/05/26 16:49:48 响应
+ 
+2020/05/26 16:50:55 start at :2000
+2020/05/26 16:50:58 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:50:58 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:50:58 path and query: /todo/index {} 
+2020/05/26 16:50:58 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static/js?file=api.js'></script>
+    <script src='/static/js?file=todo.js'></script>
+</body>
+</html>
+2020/05/26 16:50:58 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:50:58 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:50:58 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:50:58 响应
+ 
+2020/05/26 16:50:58 原始请求： GET /static/js?file=todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:50:58 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:50:58 path and query: /static/js {'file': 'todo.js'} 
+2020/05/26 16:50:58 响应
+ 
+2020/05/26 16:50:58 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:50:58 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:50:58 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:50:58 响应
+ 
+2020/05/26 16:51:46 start at :2000
+2020/05/26 16:51:48 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:51:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:51:48 path and query: /todo/index {} 
+2020/05/26 16:51:48 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static/js?file=api.js'></script>
+    <script src='/static/js?file=todo.js'></script>
+</body>
+</html>
+2020/05/26 16:51:48 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:51:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:51:48 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:51:48 响应
+ 
+2020/05/26 16:51:48 原始请求： GET /static/js?file=api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:51:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:51:48 path and query: /static/js {'file': 'api.js'} 
+2020/05/26 16:51:48 响应
+ 
+2020/05/26 16:51:48 原始请求： GET /static/js?file=todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:51:48 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:51:48 path and query: /static/js {'file': 'todo.js'} 
+2020/05/26 16:51:48 响应
+ 
+2020/05/26 16:55:47 start at :2000
+2020/05/26 16:55:49 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:55:49 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:55:49 path and query: /todo/index {} 
+2020/05/26 16:55:49 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static?file=js/api.js'></script>
+    <script src='/static?file=js/todo.js'></script>
+</body>
+</html>
+2020/05/26 16:55:50 原始请求： GET /static?file=js/api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:55:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:55:50 path and query: /static {'file': 'js/api.js'} 
+2020/05/26 16:55:50 响应
+ HTTP/1.1 200 OK
+
+let log = function() {
+    console.log.apply(console, arguments)
+}
+
+let e = function(sel) {
+    // 选择器封装
+    return document.querySelector(sel)
+}
+
+/*
+ [------- ajax 函数 套路 -------]
+*/
+let ajax = function(method, path, data, responseCallback) {
+    let r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// ------- TODO API -------
+// 获取所有 todo
+let apiTodoAll = function(callback) {
+    let path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+let apiTodoAdd = function(form, callback) {
+    let path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+let apiTodoDelete = function(id, callback) {
+    let path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+let apiTodoUpdate = function(form, callback) {
+    let path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+// load weibo all
+let apiWeiboAll = function(callback) {
+    let path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 weibo
+let apiWeiboAdd = function(form, callback) {
+    let path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+2020/05/26 16:55:50 原始请求： GET /static?file=js/todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:55:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:55:50 path and query: /static {'file': 'js/todo.js'} 
+2020/05/26 16:55:50 响应
+ HTTP/1.1 200 OK
+
+let timeString = function(timestamp) {
+    let t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+let todoTemplate = function(todo) {
+    let title = todo.title
+    let id = todo.id
+    let ut = timeString(todo.ut)
+    // data-xx 是自定义标签属性的语法
+    // 通过这样的方式可以给任意标签添加任意属性
+    // 假设 d 是 这个 div 的引用
+    // 这样的自定义属性通过  d.dataset.xx 来获取
+    // 在这个例子里面, 是 d.dataset.id
+    const t = `
+        <div class="todo-cell" id='todo-${id}' data-id="${id}">
+            <button class="todo-edit">编辑</button>
+            <button class="todo-delete">删除</button>
+            <span class='todo-title'>${title}</span>
+            <time class='todo-ut'>${ut}</time>
+        </div>
+    `
+    return t
+}
+
+let insertTodo = function(todo) {
+    let todoCell = todoTemplate(todo)
+    // 插入 todo-list
+    let todoList = e('.todo-list')
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+let insertEditForm = function(cell) {
+    let form = `
+        <div class='todo-edit-form'>
+            <input class="todo-edit-input">
+            <button class='todo-update'>更新</button>
+        </div>
+    `
+    cell.insertAdjacentHTML('beforeend', form)
+}
+
+let loadTodos = function() {
+    // 调用 ajax api 来载入数据
+    // 调用 apiTodoAll 并使用该函数作为其回调函数
+    apiTodoAll(function(r) {
+        // console.log('load all', r)
+        // 解析为 数组
+        let todos = JSON.parse(r)
+        // 循环添加到页面中
+        for(let i = 0; i < todos.length; i++) {
+            let todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+let bindEventTodoAdd = function() {
+    let b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        let input = e('#id-input-todo')
+        let title = input.value
+        log('click add', title)
+        let form = {
+            'title': title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            let todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+let bindEventTodoDelete = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            let todoCell = self.parentElement
+            let todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+let bindEventTodoEdit = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            let todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+
+let bindEventTodoUpdate = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            let editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            let input = editForm.querySelector('.todo-edit-input')
+            let title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            let todoCell = self.closest('.todo-cell')
+            let todo_id = todoCell.dataset.id
+            let form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                let todo = JSON.parse(r)
+                let selector = '#todo-' + todo.id
+                let todoCell = e(selector)
+                let titleSpan = todoCell.querySelector('.todo-title')
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+let bindEvents = function() {
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    bindEventTodoUpdate()
+}
+
+let __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+__main()
+
+
+/*
+给 删除 按钮绑定删除的事件
+1, 绑定事件
+2, 删除整个 todo-cell 元素
+*/
+// let todoList = e('.todo-list')
+// // 事件响应函数会被传入一个参数, 就是事件本身
+// todoList.addEventListener('click', function(event){
+//     // log('click todolist', event)
+//     // 我们可以通过 event.target 来得到被点击的元素
+//     let self = event.target
+//     // log('被点击的元素是', self)
+//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
+//     // classList 属性保存了元素的所有 class
+//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
+//     // log(self.classList)
+//     // 判断是否拥有某个 class 的方法如下
+//     if (self.classList.contains('todo-delete')) {
+//         log('点到了 删除按钮')
+//         // 删除 self 的父节点
+//         // parentElement 可以访问到元素的父节点
+//         self.parentElement.remove()
+//     } else {
+//         // log('点击的不是删除按钮******')
+//     }
+// })
+
+2020/05/26 16:55:50 原始请求： GET /api/todo/all HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:55:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:55:50 path and query: /api/todo/all {} 
+2020/05/26 16:55:50 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "todo1",
+    "user_id": 1,
+    "ct": 1590504950,
+    "ut": 1590504950
+  },
+  {
+    "id": 2,
+    "title": "todo2",
+    "user_id": 1,
+    "ct": 1590504950,
+    "ut": 1590504950
+  }
+]
+2020/05/26 16:56:01 原始请求： 
+2020/05/26 16:56:50 原始请求： GET /todo/index HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:56:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:56:50 path and query: /todo/index {} 
+2020/05/26 16:56:50 响应
+ HTTP/1.1 200 OK
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TODO 程序</title>
+</head>
+<body>
+    <!-- jinja 模板
+    <h1>TODO</h1>
+    <form action="/todo/add" method="post">
+        <input name="title">
+        <button type="submit">add todo</button>
+    </form>
+    
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <!-- 这里 file 的值需要 js/api.js 这种格式 -->
+    <script src='/static?file=js/api.js'></script>
+    <script src='/static?file=js/todo.js'></script>
+</body>
+</html>
+2020/05/26 16:56:50 原始请求： GET /static?file=js/api.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:56:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:56:50 path and query: /static {'file': 'js/api.js'} 
+2020/05/26 16:56:50 响应
+ HTTP/1.1 200 OK
+
+let log = function() {
+    console.log.apply(console, arguments)
+}
+
+let e = function(sel) {
+    // 选择器封装
+    return document.querySelector(sel)
+}
+
+/*
+ [------- ajax 函数 套路 -------]
+*/
+let ajax = function(method, path, data, responseCallback) {
+    let r = new XMLHttpRequest()
+    // 设置请求方法和请求地址
+    r.open(method, path, true)
+    // 设置发送的数据的格式为 application/json
+    // 这个不是必须的
+    r.setRequestHeader('Content-Type', 'application/json')
+    // 注册响应函数
+    r.onreadystatechange = function() {
+        if(r.readyState === 4) {
+            // r.response 存的就是服务器发过来的放在 HTTP BODY 中的数据
+            responseCallback(r.response)
+        }
+    }
+    // 把数据转换为 json 格式字符串
+    data = JSON.stringify(data)
+    // 发送请求
+    r.send(data)
+}
+
+// ------- TODO API -------
+// 获取所有 todo
+let apiTodoAll = function(callback) {
+    let path = '/api/todo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 todo
+let apiTodoAdd = function(form, callback) {
+    let path = '/api/todo/add'
+    ajax('POST', path, form, callback)
+}
+
+// 删除一个 todo
+let apiTodoDelete = function(id, callback) {
+    let path = '/api/todo/delete?id=' + id
+    ajax('GET', path, '', callback)
+    //    get(path, callback)
+}
+
+// 更新一个 todo
+let apiTodoUpdate = function(form, callback) {
+    let path = '/api/todo/update'
+    ajax('POST', path, form, callback)
+    //    post(path, form, callback)
+}
+
+// load weibo all
+let apiWeiboAll = function(callback) {
+    let path = '/api/weibo/all'
+    ajax('GET', path, '', callback)
+}
+
+// 增加一个 weibo
+let apiWeiboAdd = function(form, callback) {
+    let path = '/api/weibo/add'
+    ajax('POST', path, form, callback)
+}
+
+2020/05/26 16:56:50 原始请求： GET /static?file=js/todo.js HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:56:50 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:56:50 path and query: /static {'file': 'js/todo.js'} 
+2020/05/26 16:56:50 响应
+ HTTP/1.1 200 OK
+
+let timeString = function(timestamp) {
+    let t = new Date(timestamp * 1000)
+    t = t.toLocaleTimeString()
+    return t
+}
+
+let todoTemplate = function(todo) {
+    let title = todo.title
+    let id = todo.id
+    let ut = timeString(todo.ut)
+    // data-xx 是自定义标签属性的语法
+    // 通过这样的方式可以给任意标签添加任意属性
+    // 假设 d 是 这个 div 的引用
+    // 这样的自定义属性通过  d.dataset.xx 来获取
+    // 在这个例子里面, 是 d.dataset.id
+    const t = `
+        <div class="todo-cell" id='todo-${id}' data-id="${id}">
+            <button class="todo-edit">编辑</button>
+            <button class="todo-delete">删除</button>
+            <span class='todo-title'>${title}</span>
+            <time class='todo-ut'>${ut}</time>
+        </div>
+    `
+    return t
+}
+
+let insertTodo = function(todo) {
+    let todoCell = todoTemplate(todo)
+    // 插入 todo-list
+    let todoList = e('.todo-list')
+    todoList.insertAdjacentHTML('beforeend', todoCell)
+}
+
+let insertEditForm = function(cell) {
+    let form = `
+        <div class='todo-edit-form'>
+            <input class="todo-edit-input">
+            <button class='todo-update'>更新</button>
+        </div>
+    `
+    cell.insertAdjacentHTML('beforeend', form)
+}
+
+let loadTodos = function() {
+    // 调用 ajax api 来载入数据
+    // 调用 apiTodoAll 并使用该函数作为其回调函数
+    apiTodoAll(function(r) {
+        // console.log('load all', r)
+        // 解析为 数组
+        let todos = JSON.parse(r)
+        // 循环添加到页面中
+        for(let i = 0; i < todos.length; i++) {
+            let todo = todos[i]
+            insertTodo(todo)
+        }
+    })
+}
+
+let bindEventTodoAdd = function() {
+    let b = e('#id-button-add')
+    // 注意, 第二个参数可以直接给出定义函数
+    b.addEventListener('click', function(){
+        let input = e('#id-input-todo')
+        let title = input.value
+        log('click add', title)
+        let form = {
+            'title': title,
+        }
+        apiTodoAdd(form, function(r) {
+            // 收到返回的数据, 插入到页面中
+            let todo = JSON.parse(r)
+            insertTodo(todo)
+        })
+    })
+}
+
+let bindEventTodoDelete = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-delete')){
+            // 删除这个 todo
+            let todoCell = self.parentElement
+            let todo_id = todoCell.dataset.id
+            apiTodoDelete(todo_id, function(r){
+                log('删除成功', todo_id)
+                todoCell.remove()
+            })
+        }
+    })
+}
+
+let bindEventTodoEdit = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-edit')){
+            // 删除这个 todo
+            let todoCell = self.parentElement
+            insertEditForm(todoCell)
+        }
+    })
+}
+
+
+let bindEventTodoUpdate = function() {
+    let todoList = e('.todo-list')
+    // 注意, 第二个参数可以直接给出定义函数
+    todoList.addEventListener('click', function(event){
+        let self = event.target
+        if(self.classList.contains('todo-update')){
+            log('点击了 update ')
+            //
+            let editForm = self.parentElement
+            // querySelector 是 DOM 元素的方法
+            // document.querySelector 中的 document 是所有元素的祖先元素
+            let input = editForm.querySelector('.todo-edit-input')
+            let title = input.value
+            // 用 closest 方法可以找到最近的直系父节点
+            let todoCell = self.closest('.todo-cell')
+            let todo_id = todoCell.dataset.id
+            let form = {
+                'id': todo_id,
+                'title': title,
+            }
+            apiTodoUpdate(form, function(r){
+                log('更新成功', todo_id)
+                let todo = JSON.parse(r)
+                let selector = '#todo-' + todo.id
+                let todoCell = e(selector)
+                let titleSpan = todoCell.querySelector('.todo-title')
+                titleSpan.innerHTML = todo.title
+//                todoCell.remove()
+            })
+        }
+    })
+}
+
+let bindEvents = function() {
+    bindEventTodoAdd()
+    bindEventTodoDelete()
+    bindEventTodoEdit()
+    bindEventTodoUpdate()
+}
+
+let __main = function() {
+    bindEvents()
+    loadTodos()
+}
+
+__main()
+
+
+/*
+给 删除 按钮绑定删除的事件
+1, 绑定事件
+2, 删除整个 todo-cell 元素
+*/
+// let todoList = e('.todo-list')
+// // 事件响应函数会被传入一个参数, 就是事件本身
+// todoList.addEventListener('click', function(event){
+//     // log('click todolist', event)
+//     // 我们可以通过 event.target 来得到被点击的元素
+//     let self = event.target
+//     // log('被点击的元素是', self)
+//     // 通过比较被点击元素的 class 来判断元素是否是我们想要的
+//     // classList 属性保存了元素的所有 class
+//     // 在 HTML 中, 一个元素可以有多个 class, 用空格分开
+//     // log(self.classList)
+//     // 判断是否拥有某个 class 的方法如下
+//     if (self.classList.contains('todo-delete')) {
+//         log('点到了 删除按钮')
+//         // 删除 self 的父节点
+//         // parentElement 可以访问到元素的父节点
+//         self.parentElement.remove()
+//     } else {
+//         // log('点击的不是删除按钮******')
+//     }
+// })
+
+2020/05/26 16:56:51 原始请求： GET /api/todo/all HTTP/1.1
+Host: localhost:2000
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
+Content-Type: application/json
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: http://localhost:2000/todo/index
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en,zh-CN;q=0.9,zh;q=0.8,zh-TW;q=0.7,ca;q=0.6,nl;q=0.5,es;q=0.4,ja;q=0.3,ru;q=0.2,ko;q=0.1,fr;q=0.1,hr;q=0.1
+Cookie: _xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859; username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"; JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E; Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff; session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE; __wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343; user=k_ujy~17v.$dkhvz
+
+
+2020/05/26 16:56:51 cookie: ['_xsrf=2|1d54b962|bdf2e3b02788db10f988d9c6be27e94c|1583855859', 'username-localhost-8888="2|1:0|10:1588516597|23:username-localhost-8888|44:YjliNDBmNTQ0ODMxNDdmZDhmOTdjNTllZDBjOWIzYzU=|81dc6f52ab64e8835cd247433e9ff5944487624ad08197005e6b328c9d7effdc"', 'JSESSIONID=2CDAD9E7A70C1514842967AA7ECB930E', 'Pycharm-93d91720=2b38548c-9dae-4328-afd0-b666a4ab54ff', 'session=eyJfcGVybWFuZW50Ijp0cnVlLCJ1c2VyX2lkIjoxfQ.XskYkA.yQ3VETCba30QcQZrScyYvKomQnE', '__wzd3ddd19b81ba73c7b92e2=1590313314|9d71890bb343', 'user=k_ujy~17v.$dkhvz']
+2020/05/26 16:56:51 path and query: /api/todo/all {} 
+2020/05/26 16:56:51 响应
+ HTTP/1.1 200 OK
+Content-Type: application/json
+
+[
+  {
+    "id": 1,
+    "title": "todo1",
+    "user_id": 1,
+    "ct": 1590505011,
+    "ut": 1590505011
+  },
+  {
+    "id": 2,
+    "title": "todo2",
+    "user_id": 1,
+    "ct": 1590505011,
+    "ut": 1590505011
+  }
+]

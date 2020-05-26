@@ -13,7 +13,7 @@ let todoTemplate = function(todo) {
     // 假设 d 是 这个 div 的引用
     // 这样的自定义属性通过  d.dataset.xx 来获取
     // 在这个例子里面, 是 d.dataset.id
-    let t = `
+    const t = `
         <div class="todo-cell" id='todo-${id}' data-id="${id}">
             <button class="todo-edit">编辑</button>
             <button class="todo-delete">删除</button>
@@ -22,15 +22,6 @@ let todoTemplate = function(todo) {
         </div>
     `
     return t
-    /*
-    上面的写法在 python 中是这样的
-    t = """
-    <div class="todo-cell">
-        <button class="todo-delete">删除</button>
-        <span>{}</span>
-    </div>
-    """.format(todo)
-    */
 }
 
 let insertTodo = function(todo) {
@@ -52,6 +43,7 @@ let insertEditForm = function(cell) {
 
 let loadTodos = function() {
     // 调用 ajax api 来载入数据
+    // 调用 apiTodoAll 并使用该函数作为其回调函数
     apiTodoAll(function(r) {
         // console.log('load all', r)
         // 解析为 数组

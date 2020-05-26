@@ -15,7 +15,7 @@ class Todo(Model):
     def new(cls, form, user_id=-1):
         """
         创建并保存一个 todo 并且返回它
-        Todo.new({'task': '吃饭'})
+        Todo.new({'title': '吃饭'})
         form: 一个字典 包含了 todo 的数据
         """
         t = cls(form, user_id=user_id)
@@ -26,13 +26,15 @@ class Todo(Model):
     def update(cls, id, form):
         t = cls.find(id)
         valid_names = [
-            'task',
+            'title',
             'completed'
         ]
         for key in form:
             # 这里只应该更新我们想要更新的东西
             if key in valid_names:
                 setattr(t, key, form[key])
+        # 更新修改时间
+        t.ut = int(time.time())
         t.save()
 
     @classmethod
