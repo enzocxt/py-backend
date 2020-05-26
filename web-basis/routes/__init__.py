@@ -1,4 +1,5 @@
 import random
+import json
 
 
 def random_str():
@@ -38,6 +39,23 @@ def http_response(body, headers=None):
     header = response_with_headers(headers)
     r = header + '\r\n' + body
     return r.encode(encoding='utf-8')
+
+
+def json_response(data):
+    """
+    本函数返回 json 格式的 body 数据
+    前端的 ajax 函数就可以用 JSON.parse 解析出格式化的数据
+    """
+    # 注意, content-type 现在是 application/json 而不是 text/html
+    # 这个不是很要紧, 因为客户端可以忽略这个
+    headers = {
+        'Content-Type': 'application/json',
+    }
+    # json.dumps 用于把 list 或者 dict 转化为 json 格式的字符串
+    # ensure_ascii=False 可以正确处理中文
+    # indent=2 表示格式化缩进
+    body = json.dumps(data, ensure_ascii=False, indent=2)
+    return http_response(body, headers=headers)
 
 
 def redirect(url, headers=None):

@@ -5,6 +5,7 @@
     <title>TODO 程序</title>
 </head>
 <body>
+    <!-- jinja 模板
     <h1>TODO</h1>
     <form action="/todo/add" method="post">
         <input name="title">
@@ -17,5 +18,16 @@
             <a href="/todo/delete?id={{t.id}}">delete</a>
         </div>
     {% endfor %}
+    -->
+
+    <input id='id-input-todo'>
+    <button id='id-button-add'>add</button>
+    <div class="todo-list">
+    </div>
+    <!-- 处理静态文件的套路 -->
+    <!-- api.js 放了公共的函数 -->
+    <!-- 按顺序引入 2 个 js 文件, 后面的 js 文件就能使用前面的文件中的函数了 -->
+    <script src='/static?file=api.js'></script>
+    <script src='/static?file=todo.js'></script>
 </body>
 </html>

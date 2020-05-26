@@ -77,6 +77,9 @@ CRUD(CREATE RETRIEVE UPDATE DELETE) 操作
 
 
 ## v0.8
+Chrome 浏览器有一个 bug，它在请求一个数据之后，马上回建立一个空的连接，然后挂起占用连接。  
+如果是单进程、单线程的连接，就会一直卡住，接收不到新请求。  
+
 前端用 ajax 发送 HTTP 请求到后端  
 后端 API  
 ajax 跨域  

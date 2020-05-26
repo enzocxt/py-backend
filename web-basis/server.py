@@ -6,6 +6,7 @@ from routes.routes_index import route_static
 from routes.routes_user import route_dict as user_routes
 from routes.routes_todo import route_dict as todo_routes
 from routes.routes_weibo import route_dict as weibo_routes
+from routes.api_todo import route_dict as api_todo
 from routes.routes_index import route_dict
 from routes import (
     error,
@@ -133,6 +134,7 @@ def response_for_path(path, request):
     r.update(user_routes)
     r.update(todo_routes)
     r.update(weibo_routes)
+    r.update(api_todo)
     response = r.get(path, error)
     return response(request)
 
@@ -151,12 +153,15 @@ def process_request(connection):
     log('原始请求：', r)
     # 因为 chrome 会发送空请求导致 split 得到空 list
     # 所以这里判断一下防止程序崩溃
-    if len(r.split()) < 2:
+    # split by 空格，rs[0] 是请求方法，rs[1] 是路径
+    rs = r.split()
+    if len(rs) < 2:
         connection.close()
-    path = r.split()[1]
+    path = rs[1]
     # 创建一个新的 request 并设置
     request = Request()
-    request.method = r.split()[0]
+    request.method = rs[0]
+    # split header & body
     rs = r.split('\r\n\r\n', 1)
     request.add_headers(rs[0].split('\r\n')[1:])
     # 把 body 放入 request 中
@@ -193,6 +198,7 @@ def run(host='', port=2000):
             print('连接成功，使用多线程处理请求', address)
             # 开一个新的线程来处理请求, 第二个参数是传给新函数的参数列表, 必须是 tuple
             # tuple 如果只有一个值 必须带逗号
+            # [------- thread 套路 -------]
             _thread.start_new_thread(process_request, (connection,))
 
 

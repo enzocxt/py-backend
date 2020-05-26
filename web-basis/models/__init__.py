@@ -109,6 +109,13 @@ class Model(object):
         dt = time.strftime(format_, value)
         return dt
 
+    def json(self):
+        """
+        放回当前 model 的字典表示
+        """
+        d = self.__dict__.copy()
+        return d
+
     def save(self):
         """
         save 方法用于把一个 Model 的实例保存到文件中
