@@ -26,7 +26,7 @@ let weiboTemplate = function(weibo) {
     const t = `
         <div class="weibo-cell" id='weibo-${id}' data-id="${id}">
             <div>
-                <span class='weibo-content'>[WEIBO]: ${content}</span>
+                <span>[WEIBO]: </span><span class='weibo-content'>${content}</span>
                 <button class="weibo-edit">编辑</button>
                 <button class="weibo-delete">删除</button>
             </div>
@@ -101,7 +101,7 @@ let bindEventWeiboDelete = function() {
         let self = event.target
         if(self.classList.contains('weibo-delete')){
             // [套路] 删除这个 weibo
-            let weiboCell = self.parentElement
+            let weiboCell = self.closest('.weibo-cell')
             const weibo_id = weiboCell.dataset.id
             apiWeiboDelete(weibo_id, function(r){
                 log('删除成功', weibo_id)
@@ -136,13 +136,13 @@ let bindEventWeiboUpdate = function() {
             // querySelector 是 DOM 元素的方法
             // document.querySelector 中的 document 是所有元素的祖先元素
             let input = editForm.querySelector('.weibo-edit-input')
-            let title = input.value
+            let content = input.value
             // 用 closest 方法可以找到最近的直系父节点
             let weiboCell = self.closest('.weibo-cell')
             let weibo_id = weiboCell.dataset.id
             let form = {
                 'id': weibo_id,
-                'title': title,
+                'content': content,
             }
             apiWeiboUpdate(form, function(r){
                 log('更新成功', weibo_id)
@@ -160,9 +160,9 @@ let bindEventWeiboUpdate = function() {
 
 let bindEvents = function() {
     bindEventWeiboAdd()
-    // bindEventTodoDelete()
-    // bindEventTodoEdit()
-    // bindEventTodoUpdate()
+    bindEventWeiboDelete()
+    bindEventWeiboEdit()
+    bindEventWeiboUpdate()
 }
 
 let __main = function() {
