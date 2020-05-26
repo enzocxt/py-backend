@@ -24,6 +24,8 @@ let todoTemplate = function(todo) {
     return t
 }
 
+// 接收一个 todo 参数
+// 将其添加到 todo-list 元素的最后位置
 let insertTodo = function(todo) {
     let todoCell = todoTemplate(todo)
     // 插入 todo-list
@@ -56,6 +58,7 @@ let loadTodos = function() {
     })
 }
 
+// 为 todo add button 添加事件
 let bindEventTodoAdd = function() {
     let b = e('#id-button-add')
     // 注意, 第二个参数可以直接给出定义函数
@@ -63,7 +66,7 @@ let bindEventTodoAdd = function() {
         let input = e('#id-input-todo')
         let title = input.value
         log('click add', title)
-        let form = {
+        const form = {
             'title': title,
         }
         apiTodoAdd(form, function(r) {

@@ -23,7 +23,23 @@ def all(request):
     return json_response(todos)
 
 
+def add(request):
+    """
+    接收浏览器发来的添加 todo 请求
+    添加数据并返回给浏览器
+    """
+    # 得到浏览器发送的 json 格式数据
+    # 浏览器用 ajax 发送 json 格式的数据过来
+    # 所以这里我们用新增加的 json 函数来获取格式化后的 json 数据
+    form = request.json()
+    # 创建一个 todo
+    t = Todo.new(form)
+    # 把创建好的 todo 返回给浏览器
+    return json_response(t.json())
+
+
 route_dict = {
     # todo api
     '/api/todo/all': all,
+    '/api/todo/add': add,
 }

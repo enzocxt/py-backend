@@ -95,6 +95,13 @@ class Request(object):
             f[k] = v
         return f
 
+    def json(self):
+        """
+        把 body 中的 json 格式字符串解析成 dict 或者 list 并返回
+        """
+        import json
+        return json.loads(self.body)
+
 
 def parse_path(path):
     """
