@@ -33,6 +33,7 @@ let insertTodo = function(todo) {
     todoList.insertAdjacentHTML('beforeend', todoCell)
 }
 
+// 插入一个编辑元素
 let insertEditForm = function(cell) {
     let form = `
         <div class='todo-edit-form'>
@@ -77,15 +78,22 @@ let bindEventTodoAdd = function() {
     })
 }
 
+/*
+删除事件是事先绑定在每个 todo 元素的删除按钮上的
+但是对于删除按钮是后来（通过 ajax）添加的
+如何将事件绑定到后来才有的元素上？
+需要通过 代码委托 的方式，绑定到父节点上
+ */
 let bindEventTodoDelete = function() {
     let todoList = e('.todo-list')
     // 注意, 第二个参数可以直接给出定义函数
     todoList.addEventListener('click', function(event){
+        // 获得被点击的元素
         let self = event.target
         if(self.classList.contains('todo-delete')){
-            // 删除这个 todo
+            // [套路] 删除这个 todo
             let todoCell = self.parentElement
-            let todo_id = todoCell.dataset.id
+            const todo_id = todoCell.dataset.id
             apiTodoDelete(todo_id, function(r){
                 log('删除成功', todo_id)
                 todoCell.remove()
@@ -106,7 +114,6 @@ let bindEventTodoEdit = function() {
         }
     })
 }
-
 
 let bindEventTodoUpdate = function() {
     let todoList = e('.todo-list')

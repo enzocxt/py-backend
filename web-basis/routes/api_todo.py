@@ -38,8 +38,19 @@ def add(request):
     return json_response(t.json())
 
 
+def delete(request):
+    """
+    通过下面这样的链接来删除一个 todo
+    /delete?id=1
+    """
+    todo_id = int(request.query.get('id'))
+    t = Todo.delete(todo_id)
+    return json_response(t.json())
+
+
 route_dict = {
     # todo api
     '/api/todo/all': all,
     '/api/todo/add': add,
+    '/api/todo/delete': delete,
 }

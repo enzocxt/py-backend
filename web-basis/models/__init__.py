@@ -86,11 +86,15 @@ class Model(object):
     def find(cls, id):
         return cls.find_by(id=id)
 
-    def delete(self):
-        models = self.all()
+    @classmethod
+    def delete(cls, id):
+        """
+        类方法：从所有 models 中找到对应 id 的 model，并返回被删除的 model
+        """
+        models = cls.all()
         index = -1
         for i, m in enumerate(models):
-            if m.id == self.id:
+            if m.id == id:
                 index = i
                 break
         # 判断是否找到了这个 id 的数据
@@ -98,10 +102,11 @@ class Model(object):
             return
         # 找到数据
         # del models[index]
-        models.pop(index)
+        obj = models.pop(index)
         ms_data = [m.__dict__ for m in models]
-        path = self.db_path()
+        path = cls.db_path()
         save(ms_data, path)
+        return obj
 
     def time(self):
         format_ = '%Y/%m/%d %H:%M:%S'
