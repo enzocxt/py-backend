@@ -74,3 +74,11 @@ TODO 带用户验证功能
 
 ### 实现一个微博程序
 CRUD(CREATE RETRIEVE UPDATE DELETE) 操作
+
+
+## v0.8
+前端用 ajax 发送 HTTP 请求到后端  
+后端 API  
+ajax 跨域  
+ajax todo 程序（增强功能）  
+ajax weibo 和动态评论  
