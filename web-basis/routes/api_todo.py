@@ -48,9 +48,17 @@ def delete(request):
     return json_response(t.json())
 
 
+def update(request):
+    form = request.json()
+    todo_id = int(form.get('id'))
+    t = Todo.update(todo_id, form)
+    return json_response(t.json())
+
+
 route_dict = {
     # todo api
     '/api/todo/all': all,
     '/api/todo/add': add,
     '/api/todo/delete': delete,
+    '/api/todo/update': update,
 }

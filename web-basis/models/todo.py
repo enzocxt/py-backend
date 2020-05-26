@@ -36,6 +36,7 @@ class Todo(Model):
         # 更新修改时间
         t.ut = int(time.time())
         t.save()
+        return t
 
     @classmethod
     def complete(cls, id, completed):

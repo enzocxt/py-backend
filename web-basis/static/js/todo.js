@@ -122,7 +122,7 @@ let bindEventTodoUpdate = function() {
         let self = event.target
         if(self.classList.contains('todo-update')){
             log('点击了 update ')
-            //
+            // 找到父节点 edit 元素
             let editForm = self.parentElement
             // querySelector 是 DOM 元素的方法
             // document.querySelector 中的 document 是所有元素的祖先元素
@@ -142,7 +142,7 @@ let bindEventTodoUpdate = function() {
                 let todoCell = e(selector)
                 let titleSpan = todoCell.querySelector('.todo-title')
                 titleSpan.innerHTML = todo.title
-//                todoCell.remove()
+                editForm.remove()
             })
         }
     })
