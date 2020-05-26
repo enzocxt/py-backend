@@ -71,3 +71,15 @@ let apiWeiboAdd = function(form, callback) {
     let path = '/api/weibo/add'
     ajax('POST', path, form, callback)
 }
+
+// 删除一个 weibo
+let apiWeiboDelete = function(id, callback) {
+    let path = '/api/weibo/delete?id=' + id
+    ajax('GET', path, '', callback)
+}
+
+// 更新一个 weibo
+let apiWeiboUpdate = function(form, callback) {
+    let path = '/api/weibo/update'
+    ajax('POST', path, form, callback)
+}

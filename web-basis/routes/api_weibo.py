@@ -35,7 +35,7 @@ def add(request):
     form = request.json()
     # 创建一个 model
     m = Weibo.new(form)
-    # 把创建好的 weibo 返回给浏览器
+    # 把创建好的 model 返回给浏览器
     return json_response(m.json())
 
 
@@ -45,15 +45,15 @@ def delete(request):
     /delete?id=1
     """
     weibo_id = int(request.query.get('id'))
-    t = Weibo.delete(weibo_id)
-    return json_response(t.json())
+    w = Weibo.delete(weibo_id)
+    return json_response(w.json())
 
 
 def update(request):
     form = request.json()
     weibo_id = int(form.get('id'))
-    t = Weibo.update(weibo_id, form)
-    return json_response(t.json())
+    w = Weibo.update(weibo_id, form)
+    return json_response(w.json())
 
 
 route_dict = {

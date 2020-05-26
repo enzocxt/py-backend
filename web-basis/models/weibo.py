@@ -20,6 +20,32 @@ class Weibo(Model):
         d['comments'] = comments
         return d
 
+    @classmethod
+    def new(cls, form, user_id=-1):
+        """
+        创建并保存一个 weibo 并且返回它
+        Weibo.new({'content': '吃饭'})
+        form: 一个字典 包含了 weibo 的数据
+        """
+        m = cls(form, user_id=user_id)
+        m.save()
+        return m
+
+    @classmethod
+    def update(cls, id, form):
+        m = cls.find(id)
+        valid_names = [
+            'content'
+        ]
+        for key in form:
+            # 这里只应该更新我们想要更新的东西
+            if key in valid_names:
+                setattr(m, key, form[key])
+        # 更新修改时间
+        m.ut = int(time.time())
+        m.save()
+        return m
+
 
 class Comment(Model):
     def __init__(self, form, user_id=-1):

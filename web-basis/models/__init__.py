@@ -41,6 +41,7 @@ class Model(object):
     def new(cls, form):
         # 下面一句相当于 User(form) 或者 Msg(form)
         m = cls(form)
+        m.save()
         return m
 
     @classmethod
